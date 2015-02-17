@@ -1,0 +1,9 @@
+E:\ConverterCtFtC\Converter\bin\Release\Converter.exe
+E:\ConverterCtFtC\Converter\bin\Release\Converter.pdb
+E:\ConverterCtFtC\Converter\bin\Release\Converter.xml
+E:\ConverterCtFtC\Converter\obj\x86\Release\WindowsApplication1.Resources.resources
+E:\ConverterCtFtC\Converter\obj\x86\Release\Converter.vbproj.GenerateResource.Cache
+E:\ConverterCtFtC\Converter\obj\x86\Release\Converter.exe
+E:\ConverterCtFtC\Converter\obj\x86\Release\Converter.xml
+E:\ConverterCtFtC\Converter\obj\x86\Release\Converter.pdb
+E:\ConverterCtFtC\Converter\obj\x86\Release\WindowsApplication1.Converter.resources

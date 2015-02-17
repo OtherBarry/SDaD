@@ -1,0 +1,9 @@
+E:\HelloEverybody\Hello World\bin\Release\Hello World.exe
+E:\HelloEverybody\Hello World\bin\Release\Hello World.pdb
+E:\HelloEverybody\Hello World\bin\Release\Hello World.xml
+E:\HelloEverybody\Hello World\obj\x86\Release\WindowsApplication1.Form1.resources
+E:\HelloEverybody\Hello World\obj\x86\Release\WindowsApplication1.Resources.resources
+E:\HelloEverybody\Hello World\obj\x86\Release\Hello World.vbproj.GenerateResource.Cache
+E:\HelloEverybody\Hello World\obj\x86\Release\Hello World.exe
+E:\HelloEverybody\Hello World\obj\x86\Release\Hello World.xml
+E:\HelloEverybody\Hello World\obj\x86\Release\Hello World.pdb
