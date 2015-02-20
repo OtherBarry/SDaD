@@ -1,0 +1,16 @@
+﻿Public Class screenMain
+
+    Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
+        screenClose.Show()
+    End Sub
+
+    Private Sub screenMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        btnExit.Text = uibExit(usrLangNumb)
+        btnOptions.Text = uibOptions(usrLangNumb)
+        If usrLanguage = Language(1) Then
+            rdoLeft.Text = uirEnglish(usrLangNumb)
+            rdoCenter.Text = uirSpanish(usrLangNumb)
+            rdoRight.Text = uirPortuguese(usrLangNumb)
+        ElseIf usrLanguage = Language(2) Then
+            rdoLeft.Text = uirEnglish(usrLangNumb)
+            rdoCenter.Tex
