@@ -30,6 +30,7 @@ Partial Class screenFrench
         Me.btnClear = New System.Windows.Forms.Button()
         Me.btnHome = New System.Windows.Forms.Button()
         Me.btnExit = New System.Windows.Forms.Button()
+        Me.txtOption = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'cmbPhrase
@@ -63,7 +64,8 @@ Partial Class screenFrench
         '
         Me.cmbOption.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmbOption.FormattingEnabled = True
-        Me.cmbOption.Location = New System.Drawing.Point(192, 109)
+        Me.cmbOption.Items.AddRange(New Object() {" ", " ", " ", " ", " ", " ", " ", " ", " ", " "})
+        Me.cmbOption.Location = New System.Drawing.Point(192, 110)
         Me.cmbOption.MaxDropDownItems = 10
         Me.cmbOption.Name = "cmbOption"
         Me.cmbOption.Size = New System.Drawing.Size(100, 21)
@@ -107,11 +109,23 @@ Partial Class screenFrench
         Me.btnExit.Text = "Exit"
         Me.btnExit.UseVisualStyleBackColor = True
         '
+        'txtOption
+        '
+        Me.txtOption.AutoSize = True
+        Me.txtOption.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtOption.Location = New System.Drawing.Point(192, 111)
+        Me.txtOption.Name = "txtOption"
+        Me.txtOption.Size = New System.Drawing.Size(49, 16)
+        Me.txtOption.TabIndex = 8
+        Me.txtOption.Text = "French"
+        Me.txtOption.Visible = False
+        '
         'screenFrench
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(484, 243)
+        Me.Controls.Add(Me.txtOption)
         Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.btnHome)
         Me.Controls.Add(Me.btnClear)
@@ -134,4 +148,5 @@ Partial Class screenFrench
     Friend WithEvents btnClear As System.Windows.Forms.Button
     Friend WithEvents btnHome As System.Windows.Forms.Button
     Friend WithEvents btnExit As System.Windows.Forms.Button
+    Friend WithEvents txtOption As System.Windows.Forms.Label
 End Class

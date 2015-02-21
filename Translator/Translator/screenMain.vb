@@ -5,21 +5,21 @@
         btnExit.Text = uibExit(LN)
         btnOption.Text = uibOptions(LN)
         If LN = 1 Then
-            rdoLeft.Text = uiEnglish(LN)
-            rdoCente.Text = uiSpanish(LN)
-            rdoRight.Text = uiPortuguese(LN)
+            rdoLeft.Text = uiLanguages(0, LN)
+            rdoCente.Text = uiLanguages(2, LN)
+            rdoRight.Text = uiLanguages(3, LN)
         ElseIf LN = 2 Then
-            rdoLeft.Text = uiEnglish(LN)
-            rdoCente.Text = uiFrench(LN)
-            rdoRight.Text = uiPortuguese(LN)
+            rdoLeft.Text = uiLanguages(0, LN)
+            rdoCente.Text = uiLanguages(1, LN)
+            rdoRight.Text = uiLanguages(3, LN)
         ElseIf LN = 3 Then
-            rdoLeft.Text = uiEnglish(LN)
-            rdoCente.Text = uiFrench(LN)
-            rdoRight.Text = uiSpanish(LN)
+            rdoLeft.Text = uiLanguages(0, LN)
+            rdoCente.Text = uiLanguages(1, LN)
+            rdoRight.Text = uiLanguages(2, LN)
         Else
-            rdoLeft.Text = uiFrench(LN)
-            rdoCente.Text = uiSpanish(LN)
-            rdoRight.Text = uiPortuguese(LN)
+            rdoLeft.Text = uiLanguages(1, LN)
+            rdoCente.Text = uiLanguages(2, LN)
+            rdoRight.Text = uiLanguages(3, LN)
         End If
     End Sub
 
@@ -35,8 +35,10 @@
         If rdoLeft.Enabled Then
             If LN > 0 Then
                 screenEnglish.Show()
+                GlobalVariables.TN = 0
             Else
                 screenFrench.Show()
+                GlobalVariables.TN = 1
             End If
         End If
     End Sub
@@ -45,8 +47,10 @@
         If rdoCente.Enabled Then
             If LN > 1 Then
                 screenFrench.Show()
+                GlobalVariables.TN = 1
             Else
                 screenSpanish.Show()
+                GlobalVariables.TN = 2
             End If
         End If
     End Sub
@@ -55,8 +59,10 @@
         If rdoRight.Enabled Then
             If LN < 3 Then
                 screenPortuguese.Show()
+                GlobalVariables.TN = 3
             Else
                 screenSpanish.Show()
+                GlobalVariables.TN = 2
             End If
         End If
     End Sub

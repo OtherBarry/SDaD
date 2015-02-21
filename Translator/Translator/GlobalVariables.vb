@@ -1,6 +1,7 @@
 ﻿Module GlobalVariables
     Public usrLanguage As String
     Public LN As Integer
+    Public TN As Integer
     Public usrName As String
     Public transLanguage As String
     Public uibClear = {"Clear", "Clair", "Claro", "Claro"}
@@ -17,10 +18,10 @@
     Public uilSelectLang = {"Please select a language:", "Sélectionnez une langue:", "Seleccione un idioma:", "Selecione um idioma:"}
     Public uilTrans = {"Translation", "Traduction", "Traducción", "Tradução"}
     Public uilName = {"What is your name?", "Quel est votre nom?", "Cuál es tu nombre?", "Qual é o seu nome?"}
-    Public uiEnglish = {"English", "Anglais", "Inglés", "Inglês"}
-    Public uiFrench = {"French", "Français", "Francés", "Francês"}
-    Public uiSpanish = {"Spanish", "Espagnol", "Español", "Espanhol"}
-    Public uiPortuguese = {"Portuguese", "Portugais", "Portugués", "Português"}
+    Public uiLanguages = {{"English", "Anglais", "Inglés", "Inglês"},
+                          {"French", "Français", "Francés", "Francês"},
+                          {"Spanish", "Espagnol", "Español", "Espanhol"},
+                          {"Portuguese", "Portugais", "Portugués", "Português"}}
     Public Language = {"English", "Français", "Español", "Português"}
     Public Phrases = {{"Where are the nearest toilets?", "Où sont les toilettes les plus proches?", "¿Dónde están los baños más cercanos?", "Onde estão os banheiros mais próximos?"},
                       {"How do I get to ...", "Comment puis-je aller à ...", "Cómo llego a ...", "Como faço para chegar até ..."},
@@ -32,6 +33,20 @@
                       {"How much is that?", "Combien est-ce", "¿Cuánto es eso?", "Quanto é isso?"},
                       {"Do you speak", "Parlez-vous", "¿Hablas", "Você fala"},
                       {"I don't speak", "Je ne parle pas", "Yo no hablo", "Eu não falo"}}
+    Public Transport = {{"train station", "la gare", "la estación de tren", "a estação de trem"},
+                        {"bus stop", "l'arrêt de bus", "la parada de autobús", "ponto de ônibus"},
+                        {"ferry wharf", "le quai de traversier", "el muelle del ferry", "o cais da balsa"},
+                        {"taxi rank", "la station de taxis", "la parada de taxis", "o ponto de táxi"}}
+    Public Numbers = {{"one", "une", "uno", "um"},
+                      {"two", "deux", "dos", "dois"},
+                      {"three", "trois", "tres", "três"},
+                      {"four", "quatre", "cuatro", "quatro"},
+                      {"five", "cinq", "cinco", "cinco"},
+                      {"six", "six", "seis", "seis"},
+                      {"seven", "sept", "siete", "sete"},
+                      {"eight", "huit", "ocho", "oito"},
+                      {"nine", "neuf", "nueve", "nove"},
+                      {"ten", "dix", "diez", "dez"}}
     'Third Row needs [Transport] + "?"
     'Fifth Row needs [Number] + "?"
     'Ninth Row needs usrLanguage + "?"

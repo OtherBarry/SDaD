@@ -30,6 +30,7 @@ Partial Class screenSpanish
         Me.txtTranslation = New System.Windows.Forms.TextBox()
         Me.lblPhrase = New System.Windows.Forms.Label()
         Me.cmbPhrase = New System.Windows.Forms.ComboBox()
+        Me.txtOption = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'btnExit
@@ -72,6 +73,7 @@ Partial Class screenSpanish
         '
         Me.cmbOption.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmbOption.FormattingEnabled = True
+        Me.cmbOption.Items.AddRange(New Object() {" ", " ", " ", " ", " ", " ", " ", " ", " ", " "})
         Me.cmbOption.Location = New System.Drawing.Point(192, 109)
         Me.cmbOption.MaxDropDownItems = 10
         Me.cmbOption.Name = "cmbOption"
@@ -107,11 +109,23 @@ Partial Class screenSpanish
         Me.cmbPhrase.Size = New System.Drawing.Size(174, 21)
         Me.cmbPhrase.TabIndex = 8
         '
+        'txtOption
+        '
+        Me.txtOption.AutoSize = True
+        Me.txtOption.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtOption.Location = New System.Drawing.Point(192, 110)
+        Me.txtOption.Name = "txtOption"
+        Me.txtOption.Size = New System.Drawing.Size(57, 16)
+        Me.txtOption.TabIndex = 16
+        Me.txtOption.Text = "Spanish"
+        Me.txtOption.Visible = False
+        '
         'screenSpanish
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(484, 243)
+        Me.Controls.Add(Me.txtOption)
         Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.btnHome)
         Me.Controls.Add(Me.btnClear)
@@ -134,4 +148,5 @@ Partial Class screenSpanish
     Friend WithEvents txtTranslation As System.Windows.Forms.TextBox
     Friend WithEvents lblPhrase As System.Windows.Forms.Label
     Friend WithEvents cmbPhrase As System.Windows.Forms.ComboBox
+    Friend WithEvents txtOption As System.Windows.Forms.Label
 End Class
