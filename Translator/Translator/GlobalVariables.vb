@@ -23,7 +23,7 @@
                           {"Spanish", "Espagnol", "Español", "Espanhol"},
                           {"Portuguese", "Portugais", "Portugués", "Português"}}
     Public Language = {"English", "Français", "Español", "Português"}
-    Public Phrases = {{"Where are the nearest toilets?", "Où sont les toilettes les plus proches?", "¿Dónde están los baños más cercanos?", "Onde estão os banheiros mais próximos?"},
+    Public Phrases = {{"Where are the nearest toilets", "Où sont les toilettes les plus proches", "¿Dónde están los baños más cercanos", "Onde estão os banheiros mais próximos"},
                       {"How do I get to ...", "Comment puis-je aller à ...", "Cómo llego a ...", "Como faço para chegar até ..."},
                       {"Where is the nearest", "Où est le plus proche", "¿Dónde está el más cercano", "Onde está o mais próximo"},
                       {"Can I order a ...", "Puis-je commander un ...", "¿Puedo pedir una ...", "Posso pedir um ..."},

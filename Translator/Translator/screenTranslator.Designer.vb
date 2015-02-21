@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class screenFrench
+Partial Class screenTranslator
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -120,7 +120,7 @@ Partial Class screenFrench
         Me.txtOption.Text = "French"
         Me.txtOption.Visible = False
         '
-        'screenFrench
+        'screenTranslator
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -134,7 +134,7 @@ Partial Class screenFrench
         Me.Controls.Add(Me.txtTranslation)
         Me.Controls.Add(Me.lblPhrase)
         Me.Controls.Add(Me.cmbPhrase)
-        Me.Name = "screenFrench"
+        Me.Name = "screenTranslator"
         Me.Text = "French Translator"
         Me.ResumeLayout(False)
         Me.PerformLayout()

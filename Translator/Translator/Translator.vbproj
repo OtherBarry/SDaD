@@ -70,12 +70,6 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="screenEnglish.Designer.vb">
-      <DependentUpon>screenEnglish.vb</DependentUpon>
-    </Compile>
-    <Compile Include="screenEnglish.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="GlobalVariables.vb" />
     <Compile Include="screenClose.Designer.vb">
       <DependentUpon>screenClose.vb</DependentUpon>
@@ -90,22 +84,10 @@
       <DependentUpon>screenMain.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="screenFrench.Designer.vb">
-      <DependentUpon>screenFrench.vb</DependentUpon>
+    <Compile Include="screenTranslator.Designer.vb">
+      <DependentUpon>screenTranslator.vb</DependentUpon>
     </Compile>
-    <Compile Include="screenFrench.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="screenSpanish.Designer.vb">
-      <DependentUpon>screenSpanish.vb</DependentUpon>
-    </Compile>
-    <Compile Include="screenSpanish.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="screenPortuguese.Designer.vb">
-      <DependentUpon>screenPortuguese.vb</DependentUpon>
-    </Compile>
-    <Compile Include="screenPortuguese.vb">
+    <Compile Include="screenTranslator.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="screenOpen.Designer.vb">
@@ -134,11 +116,8 @@
     <EmbeddedResource Include="screenClose.resx">
       <DependentUpon>screenClose.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="screenEnglish.resx">
-      <DependentUpon>screenEnglish.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="screenFrench.resx">
-      <DependentUpon>screenFrench.vb</DependentUpon>
+    <EmbeddedResource Include="screenTranslator.resx">
+      <DependentUpon>screenTranslator.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="screenMain.resx">
       <DependentUpon>screenMain.vb</DependentUpon>
@@ -151,12 +130,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="screenOpen.resx">
       <DependentUpon>screenOpen.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="screenPortuguese.resx">
-      <DependentUpon>screenPortuguese.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="screenSpanish.resx">
-      <DependentUpon>screenSpanish.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

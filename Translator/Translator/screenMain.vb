@@ -34,36 +34,34 @@
     Private Sub rdoLeft_Click(sender As Object, e As EventArgs) Handles rdoLeft.Click
         If rdoLeft.Enabled Then
             If LN > 0 Then
-                screenEnglish.Show()
                 GlobalVariables.TN = 0
             Else
-                screenFrench.Show()
                 GlobalVariables.TN = 1
             End If
+            screenTranslator.Show()
         End If
     End Sub
 
     Private Sub rdoCente_Click(sender As Object, e As EventArgs) Handles rdoCente.Click
         If rdoCente.Enabled Then
             If LN > 1 Then
-                screenFrench.Show()
+
                 GlobalVariables.TN = 1
             Else
-                screenSpanish.Show()
                 GlobalVariables.TN = 2
             End If
+            screenTranslator.Show()
         End If
     End Sub
 
     Private Sub rdoRight_Click(sender As Object, e As EventArgs) Handles rdoRight.Click
         If rdoRight.Enabled Then
             If LN < 3 Then
-                screenPortuguese.Show()
                 GlobalVariables.TN = 3
             Else
-                screenSpanish.Show()
                 GlobalVariables.TN = 2
             End If
+            screenTranslator.Show()
         End If
     End Sub
 End Class
