@@ -1,11 +1,11 @@
 # SDaD
 A repository for all for my work from my Software Deign and Development Class
 
-Current Project:
+##Current Project:
 
-[*] Translator
+* Translator
 
-Previous Projects:
+##Previous Projects:
 
-[*] Hello World
-[*] Temperature Converter
+* Hello World
+* Temperature Converter
