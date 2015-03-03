@@ -8,13 +8,8 @@
         screenMain.Show()
     End Sub
 
-    Private Sub btnClear_Click(sender As Object, e As EventArgs) Handles btnClear.Click
-        cmbPhrase.Text = ""
-    End Sub
-
     Private Sub screenFrench_Load(sender As Object, e As EventArgs) Handles Me.Load
         Me.Text = uiLanguages(TN, LN) + " " + uilTrans(LN)
-        btnClear.Text = uibClear(LN)
         btnExit.Text = uibExit(LN)
         btnHome.Text = uibHome(LN)
         lblPhrase.Text = uilPhrases(LN)
@@ -22,6 +17,19 @@
         For x As Integer = 0 To 9
             cmbPhrase.Items(x) = Phrases(x, LN) + "?"
         Next
+        If TN = 1 Then
+            txtDescription.Text = DescriptionsFrench(LN, CN)
+            Flag.BackgroundImage = FlagsFrench(CN)
+        ElseIf TN = 2 Then
+            txtDescription.Text = DescriptionsSpanish(LN, CN)
+            Flag.BackgroundImage = FlagsSpanish(CN)
+        ElseIf TN = 3 Then
+            txtDescription.Text = DescriptionsPortuguese(LN, CN)
+            Flag.BackgroundImage = FlagsPortugal(CN)
+        Else
+            txtDescription.Text = DescriptionsEnglish(LN, CN)
+            Flag.BackgroundImage = FlagsEnglish(CN)
+        End If
     End Sub
 
     Private Sub cmbPhrase_TextChanged(sender As Object, e As EventArgs) Handles cmbPhrase.TextChanged

@@ -70,6 +70,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="screenOptions.Designer.vb">
+      <DependentUpon>screenOptions.vb</DependentUpon>
+    </Compile>
+    <Compile Include="screenOptions.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="GlobalVariables.vb" />
     <Compile Include="screenClose.Designer.vb">
       <DependentUpon>screenClose.vb</DependentUpon>
@@ -113,6 +119,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="screenOptions.resx">
+      <DependentUpon>screenOptions.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="screenClose.resx">
       <DependentUpon>screenClose.vb</DependentUpon>
     </EmbeddedResource>
@@ -143,6 +152,79 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\flagMorocco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flagMozambique.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flagNewZealand.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flagPeru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flagPortugal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flagSouthAfrica.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flagSpain.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flagUnitedKingdom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flagUnitedStates.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flagVenezuela.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flagAlgeria.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flagAngola.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flagArgentina.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flagAustralia.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flagBelgium.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flagBrazil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flagCanada.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flagCapeVerde.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flagColombia.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flagEastTimor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flagFrance.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flagLuxembourg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flagMexico.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flagMonaco.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
