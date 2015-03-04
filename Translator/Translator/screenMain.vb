@@ -4,6 +4,15 @@
         Me.Text = uilTrans(LN)
         btnExit.Text = uibExit(LN)
         btnOption.Text = uibOptions(LN)
+        GroupLanguage.Text = uilSelectLang(LN)
+        GroupCountry.Text = uilSelectCountry(LN)
+
+        If usrName = "" Then
+            lblWelcome.Text = uilWelcome(LN) + ", User!"
+        Else
+            lblWelcome.Text = uilWelcome(LN) + ", " + usrName + "!"
+        End If
+
         If LN = 1 Then
             rdoLeft.Text = uiLanguages(0, LN)
             rdoCente.Text = uiLanguages(2, LN)
@@ -14,7 +23,6 @@
             txtLeft.Text = CountiresSpoken(LN, 0)
             txtCenter.Text = CountiresSpoken(LN, 2)
             txtRight.Text = CountiresSpoken(LN, 3)
-
         ElseIf LN = 2 Then
             rdoLeft.Text = uiLanguages(0, LN)
             rdoCente.Text = uiLanguages(1, LN)
@@ -509,12 +517,21 @@
     Private Sub chkNation_CheckedChanged(sender As Object, e As EventArgs) Handles chkNation.CheckedChanged
         If chkNation.Checked Then
             chkNation.Text = "Flags On"
-            lblCountry1.Visible = True
-            lblCountry2.Visible = True
-            lblCountry3.Visible = True
-            lblCountry4.Visible = True
-            lblCountry5.Visible = True
-            lblCountry6.Visible = True
+            If rdoLeft.Checked Or rdoCente.Checked Or rdoRight.Checked Then
+                lblCountry1.Visible = True
+                lblCountry2.Visible = True
+                lblCountry3.Visible = True
+                lblCountry4.Visible = True
+                lblCountry5.Visible = True
+                lblCountry6.Visible = True
+            Else
+                lblCountry1.Visible = False
+                lblCountry2.Visible = False
+                lblCountry3.Visible = False
+                lblCountry4.Visible = False
+                lblCountry5.Visible = False
+                lblCountry6.Visible = False
+            End If
             btnCountry1.Text = ""
             btnCountry2.Text = ""
             btnCountry3.Text = ""

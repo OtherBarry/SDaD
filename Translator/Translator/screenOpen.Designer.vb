@@ -29,12 +29,12 @@ Partial Class screenOpen
         Me.btnNext = New System.Windows.Forms.Button()
         Me.btnExit = New System.Windows.Forms.Button()
         Me.lblName = New System.Windows.Forms.Label()
-        Me.SuspendLayout
+        Me.SuspendLayout()
         '
         'lblHello
         '
-        Me.lblHello.AutoSize = true
-        Me.lblHello.Font = New System.Drawing.Font("Times New Roman", 27.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.lblHello.AutoSize = True
+        Me.lblHello.Font = New System.Drawing.Font("Times New Roman", 27.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblHello.Location = New System.Drawing.Point(12, 9)
         Me.lblHello.Name = "lblHello"
         Me.lblHello.Size = New System.Drawing.Size(194, 42)
@@ -54,13 +54,14 @@ Partial Class screenOpen
         'txtName
         '
         Me.txtName.Location = New System.Drawing.Point(148, 121)
+        Me.txtName.MaxLength = 17
         Me.txtName.Name = "txtName"
         Me.txtName.Size = New System.Drawing.Size(268, 20)
         Me.txtName.TabIndex = 2
         '
         'lblLanguage
         '
-        Me.lblLanguage.AutoSize = true
+        Me.lblLanguage.AutoSize = True
         Me.lblLanguage.Location = New System.Drawing.Point(16, 79)
         Me.lblLanguage.Name = "lblLanguage"
         Me.lblLanguage.Size = New System.Drawing.Size(129, 13)
@@ -74,7 +75,7 @@ Partial Class screenOpen
         Me.btnNext.Size = New System.Drawing.Size(75, 23)
         Me.btnNext.TabIndex = 5
         Me.btnNext.Text = "Next"
-        Me.btnNext.UseVisualStyleBackColor = true
+        Me.btnNext.UseVisualStyleBackColor = True
         '
         'btnExit
         '
@@ -83,11 +84,11 @@ Partial Class screenOpen
         Me.btnExit.Size = New System.Drawing.Size(75, 23)
         Me.btnExit.TabIndex = 6
         Me.btnExit.Text = "Exit"
-        Me.btnExit.UseVisualStyleBackColor = true
+        Me.btnExit.UseVisualStyleBackColor = True
         '
         'lblName
         '
-        Me.lblName.AutoSize = true
+        Me.lblName.AutoSize = True
         Me.lblName.Location = New System.Drawing.Point(16, 121)
         Me.lblName.Name = "lblName"
         Me.lblName.Size = New System.Drawing.Size(101, 13)
@@ -96,7 +97,7 @@ Partial Class screenOpen
         '
         'screenOpen
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6!, 13!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(428, 211)
         Me.Controls.Add(Me.lblName)
@@ -107,11 +108,12 @@ Partial Class screenOpen
         Me.Controls.Add(Me.cmbLanguage)
         Me.Controls.Add(Me.lblHello)
         Me.Name = "screenOpen"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Translator"
-        Me.ResumeLayout(false)
-        Me.PerformLayout
+        Me.ResumeLayout(False)
+        Me.PerformLayout()
 
-End Sub
+    End Sub
     Friend WithEvents lblHello As System.Windows.Forms.Label
     Friend WithEvents cmbLanguage As System.Windows.Forms.ComboBox
     Friend WithEvents txtName As System.Windows.Forms.TextBox

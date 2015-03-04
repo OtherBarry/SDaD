@@ -23,4 +23,12 @@
     Private Sub txtName_TextChanged(sender As Object, e As EventArgs) Handles txtName.TextChanged
         GlobalVariables.usrName = txtName.Text
     End Sub
+
+    Private Sub screenOptions_Load(sender As Object, e As EventArgs) Handles Me.Load
+        btnExit.Text = uibExit(LN)
+        btnNext.Text = uibHome(LN)
+        lblLanguage.Text = uilSelectLang(LN)
+        lblName.Text = uilName(LN)
+        Me.Text = uilTrans(LN)
+    End Sub
 End Class

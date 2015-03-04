@@ -54,6 +54,7 @@ Partial Class screenOptions
         'txtName
         '
         Me.txtName.Location = New System.Drawing.Point(148, 121)
+        Me.txtName.MaxLength = 17
         Me.txtName.Name = "txtName"
         Me.txtName.Size = New System.Drawing.Size(268, 20)
         Me.txtName.TabIndex = 2
@@ -94,7 +95,7 @@ Partial Class screenOptions
         Me.lblName.TabIndex = 7
         Me.lblName.Text = "What is your name?"
         '
-        'screenOpen
+        'screenOptions
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -106,7 +107,8 @@ Partial Class screenOptions
         Me.Controls.Add(Me.txtName)
         Me.Controls.Add(Me.cmbLanguage)
         Me.Controls.Add(Me.lblHello)
-        Me.Name = "screenOpen"
+        Me.Name = "screenOptions"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Translator"
         Me.ResumeLayout(False)
         Me.PerformLayout()

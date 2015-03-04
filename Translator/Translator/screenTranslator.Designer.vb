@@ -30,11 +30,11 @@ Partial Class screenTranslator
         Me.btnHome = New System.Windows.Forms.Button()
         Me.btnExit = New System.Windows.Forms.Button()
         Me.txtOption = New System.Windows.Forms.Label()
-        Me.Flag = New System.Windows.Forms.PictureBox()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.txtDescription = New System.Windows.Forms.RichTextBox()
+        Me.Map = New System.Windows.Forms.PictureBox()
+        Me.Flag = New System.Windows.Forms.PictureBox()
+        CType(Me.Map, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Flag, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'cmbPhrase
@@ -64,6 +64,7 @@ Partial Class screenTranslator
         Me.txtTranslation.Font = New System.Drawing.Font("Times New Roman", 15.75!)
         Me.txtTranslation.Location = New System.Drawing.Point(12, 154)
         Me.txtTranslation.Name = "txtTranslation"
+        Me.txtTranslation.ReadOnly = True
         Me.txtTranslation.Size = New System.Drawing.Size(446, 32)
         Me.txtTranslation.TabIndex = 2
         '
@@ -122,24 +123,6 @@ Partial Class screenTranslator
         Me.txtOption.Text = "French"
         Me.txtOption.Visible = False
         '
-        'Flag
-        '
-        Me.Flag.BackgroundImage = Global.Translator.My.Resources.Resources.flagAlgeria
-        Me.Flag.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Flag.Location = New System.Drawing.Point(532, 70)
-        Me.Flag.Name = "Flag"
-        Me.Flag.Size = New System.Drawing.Size(250, 170)
-        Me.Flag.TabIndex = 9
-        Me.Flag.TabStop = False
-        '
-        'PictureBox2
-        '
-        Me.PictureBox2.Location = New System.Drawing.Point(788, 70)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(144, 171)
-        Me.PictureBox2.TabIndex = 10
-        Me.PictureBox2.TabStop = False
-        '
         'txtDescription
         '
         Me.txtDescription.AcceptsTab = True
@@ -151,13 +134,32 @@ Partial Class screenTranslator
         Me.txtDescription.TabIndex = 11
         Me.txtDescription.Text = ""
         '
+        'Map
+        '
+        Me.Map.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Map.Location = New System.Drawing.Point(788, 70)
+        Me.Map.Name = "Map"
+        Me.Map.Size = New System.Drawing.Size(144, 171)
+        Me.Map.TabIndex = 10
+        Me.Map.TabStop = False
+        '
+        'Flag
+        '
+        Me.Flag.BackgroundImage = Global.Translator.My.Resources.Resources.flagAlgeria
+        Me.Flag.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Flag.Location = New System.Drawing.Point(532, 70)
+        Me.Flag.Name = "Flag"
+        Me.Flag.Size = New System.Drawing.Size(250, 170)
+        Me.Flag.TabIndex = 9
+        Me.Flag.TabStop = False
+        '
         'screenTranslator
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(944, 501)
+        Me.ClientSize = New System.Drawing.Size(944, 502)
         Me.Controls.Add(Me.txtDescription)
-        Me.Controls.Add(Me.PictureBox2)
+        Me.Controls.Add(Me.Map)
         Me.Controls.Add(Me.Flag)
         Me.Controls.Add(Me.txtOption)
         Me.Controls.Add(Me.btnExit)
@@ -172,8 +174,8 @@ Partial Class screenTranslator
         Me.Name = "screenTranslator"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "French Translator"
+        CType(Me.Map, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Flag, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -187,6 +189,6 @@ Partial Class screenTranslator
     Friend WithEvents btnExit As System.Windows.Forms.Button
     Friend WithEvents txtOption As System.Windows.Forms.Label
     Friend WithEvents Flag As System.Windows.Forms.PictureBox
-    Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
+    Friend WithEvents Map As System.Windows.Forms.PictureBox
     Friend WithEvents txtDescription As System.Windows.Forms.RichTextBox
 End Class

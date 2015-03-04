@@ -49,6 +49,7 @@ Partial Class screenMain
         Me.btnCountry4 = New System.Windows.Forms.Button()
         Me.btnCountry1 = New System.Windows.Forms.Button()
         Me.GroupLanguage = New System.Windows.Forms.GroupBox()
+        Me.lblWelcome = New System.Windows.Forms.Label()
         CType(Me.flagLeft, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.flagCenter, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.flagRight, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -356,11 +357,24 @@ Partial Class screenMain
         Me.GroupLanguage.TabStop = False
         Me.GroupLanguage.Text = "Please select a language"
         '
+        'lblWelcome
+        '
+        Me.lblWelcome.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.lblWelcome.AutoSize = True
+        Me.lblWelcome.Font = New System.Drawing.Font("Monotype Corsiva", 36.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblWelcome.Location = New System.Drawing.Point(320, 9)
+        Me.lblWelcome.Name = "lblWelcome"
+        Me.lblWelcome.Size = New System.Drawing.Size(306, 57)
+        Me.lblWelcome.TabIndex = 29
+        Me.lblWelcome.Text = "Welcome, User!"
+        Me.lblWelcome.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'screenMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(944, 501)
+        Me.Controls.Add(Me.lblWelcome)
         Me.Controls.Add(Me.GroupCountry)
         Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.btnOption)
@@ -368,6 +382,7 @@ Partial Class screenMain
         Me.MaximumSize = New System.Drawing.Size(960, 540)
         Me.MinimumSize = New System.Drawing.Size(960, 540)
         Me.Name = "screenMain"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Translator"
         CType(Me.flagLeft, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.flagCenter, System.ComponentModel.ISupportInitialize).EndInit()
@@ -377,6 +392,7 @@ Partial Class screenMain
         Me.GroupLanguage.ResumeLayout(False)
         Me.GroupLanguage.PerformLayout()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
     Friend WithEvents btnExit As System.Windows.Forms.Button
@@ -406,5 +422,6 @@ Partial Class screenMain
     Friend WithEvents btnCountry3 As System.Windows.Forms.Button
     Friend WithEvents btnCountry4 As System.Windows.Forms.Button
     Friend WithEvents btnCountry1 As System.Windows.Forms.Button
+    Friend WithEvents lblWelcome As System.Windows.Forms.Label
 
 End Class

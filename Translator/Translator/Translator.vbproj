@@ -153,7 +153,9 @@
     </None>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\mapColombia.png" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="Resources\flagMorocco.png" />
   </ItemGroup>
@@ -225,6 +227,75 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\flagMonaco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mapMexico.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mapMorocco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mapNewZealand.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mapPeru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mapUnitedStates.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mapVenezuala.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mapAlgeria.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mapAngola.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mapCapeVerde.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mapMozambique.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mapSouthAfrica.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mapMonaco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mapBelgium.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mapFrance.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mapLuxembourg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mapSpain.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mapUnitedKingdom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mapPortugal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mapEastTimor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mapArgentina.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mapAustralia.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mapBrasil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mapCanada.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

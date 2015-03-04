@@ -18,6 +18,8 @@
     Public uilPhrases = {"Phrases", "Phrases", "Frases", "Frases"}
     Public uilQuit = {"Are you sure you want to exit?", "Êtes-vous sûr de vouloir quitter?", "¿Seguro que quieres salir?", "Tem certeza de que deseja sair?"}
     Public uilSelectLang = {"Please select a language:", "Sélectionnez une langue:", "Seleccione un idioma:", "Selecione um idioma:"}
+    Public uilSelectCountry = {"Please select a country", "Sélectionner un pays", "Seleccione un país", "Selecione um país"}
+    Public uilWelcome = {"Welcome", "Bienvenue", "Bienvenidos", "Bem-vindo"}
     Public uilTrans = {"Translation", "Traduction", "Traducción", "Tradução"}
     Public uilName = {"What is your name?", "Quel est votre nom?", "Cuál es tu nombre?", "Qual é o seu nome?"}
     Public uiLanguages = {{"English", "Anglais", "Inglés", "Inglês"},
@@ -89,6 +91,10 @@
                                 {"Angola", "Brasil", "Cabo Verde", "Timor Oriental", "Mozambique", "Portugal"},
                                 {"Angola", "Brasil", "Cabo Verde", "Timor Leste", "Moçambique", "Portugal"}}
     Public FlagsPortugal = {My.Resources.flagAngola, My.Resources.flagBrazil, My.Resources.flagCapeVerde, My.Resources.flagEastTimor, My.Resources.flagMozambique, My.Resources.flagPortugal}
+    Public MapsEnglish = {My.Resources.mapAustralia, My.Resources.mapCanada, My.Resources.mapNewZealand, My.Resources.mapSouthAfrica, My.Resources.mapUnitedKingdom, My.Resources.mapUnitedStates}
+    Public MapsFrench = {My.Resources.mapAlgeria, My.Resources.mapBelgium, My.Resources.mapFrance, My.Resources.mapLuxembourg, My.Resources.mapMonaco, My.Resources.mapMorocco}
+    Public MapsSpanish = {My.Resources.mapArgentina, My.Resources.mapColombia, My.Resources.mapMexico, My.Resources.mapPeru, My.Resources.mapSpain, My.Resources.mapVenezuala}
+    Public MapsPortugal = {My.Resources.mapAngola, My.Resources.mapBrasil, My.Resources.mapCapeVerde, My.Resources.mapEastTimor, My.Resources.mapMozambique, My.Resources.mapPortugal}
     Public CountiresSpoken = {{"Spoken in 52 countries", "Spoken in 47 countries", "Spoken in 22 countries", "Spoken in 11 countries"},
                               {"Parlée dans 52 pays", "Parlée dans 47 pays", "Parlée dans 22 pays", "Parlée dans 11 pays"},
                               {"Hablado en 52 países", "Hablado en 47 países", "Hablado en 22 países", "Hablado en 11 países"},

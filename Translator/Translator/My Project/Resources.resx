@@ -190,4 +190,76 @@
   <data name="flagVenezuela" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\flagVenezuela.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="mapAlgeria" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mapAlgeria.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mapAngola" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mapAngola.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mapArgentina" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mapArgentina.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mapAustralia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mapAustralia.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mapBelgium" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mapBelgium.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mapBrasil" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mapBrasil.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mapCanada" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mapCanada.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mapCapeVerde" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mapCapeVerde.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mapColombia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mapColombia.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mapEastTimor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mapEastTimor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mapFrance" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mapFrance.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mapLuxembourg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mapLuxembourg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mapMexico" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mapMexico.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mapMonaco" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mapMonaco.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mapMorocco" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mapMorocco.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mapMozambique" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mapMozambique.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mapNewZealand" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mapNewZealand.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mapPeru" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mapPeru.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mapPortugal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mapPortugal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mapSouthAfrica" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mapSouthAfrica.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mapSpain" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mapSpain.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mapUnitedKingdom" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mapUnitedKingdom.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mapUnitedStates" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mapUnitedStates.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mapVenezuala" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mapVenezuala.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

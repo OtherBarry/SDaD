@@ -63,6 +63,7 @@ Partial Class screenClose
         Me.Controls.Add(Me.btnYes)
         Me.Controls.Add(Me.lblQuestion)
         Me.Name = "screenClose"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Exit"
         Me.ResumeLayout(False)
         Me.PerformLayout()

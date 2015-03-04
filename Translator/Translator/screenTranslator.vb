@@ -14,21 +14,33 @@
         btnHome.Text = uibHome(LN)
         lblPhrase.Text = uilPhrases(LN)
         lblTranslation.Text = uilTrans(LN)
-        For x As Integer = 0 To 9
+        For x As Integer = 0 To 1
             cmbPhrase.Items(x) = Phrases(x, LN) + "?"
         Next
+        For x As Integer = 5 To 7
+            cmbPhrase.Items(x) = Phrases(x, LN) + "?"
+        Next
+        cmbPhrase.Items(3) = Phrases(3, LN) + "?"
+        cmbPhrase.Items(2) = Phrases(2, LN) + "..."
+        cmbPhrase.Items(4) = Phrases(4, LN)
+        cmbPhrase.Items(8) = Phrases(9, LN) + "..."
+        cmbPhrase.Items(9) = Phrases(8, LN) + "..."
         If TN = 1 Then
             txtDescription.Text = DescriptionsFrench(LN, CN)
             Flag.BackgroundImage = FlagsFrench(CN)
+            Map.BackgroundImage = MapsFrench(CN)
         ElseIf TN = 2 Then
             txtDescription.Text = DescriptionsSpanish(LN, CN)
             Flag.BackgroundImage = FlagsSpanish(CN)
+            Map.BackgroundImage = MapsSpanish(CN)
         ElseIf TN = 3 Then
             txtDescription.Text = DescriptionsPortuguese(LN, CN)
             Flag.BackgroundImage = FlagsPortugal(CN)
+            Map.BackgroundImage = MapsPortugal(CN)
         Else
             txtDescription.Text = DescriptionsEnglish(LN, CN)
             Flag.BackgroundImage = FlagsEnglish(CN)
+            Map.BackgroundImage = MapsEnglish(CN)
         End If
     End Sub
 
@@ -39,7 +51,7 @@
         Dim b As Integer = Array.IndexOf(a, cmbOption.SelectedItem)
         Dim x() As String = (From item As String In cmbPhrase.Items Select item).ToArray
         Dim y As Integer = Array.IndexOf(x, cmbPhrase.SelectedItem)
-        If cmbPhrase.SelectedItem = Phrases(2, LN) + "?" Then
+        If cmbPhrase.SelectedItem = Phrases(2, LN) + "..." Then
             cmbOption.Visible = True
             For c As Integer = 4 To 9
                 cmbOption.Items(c) = " "
@@ -47,15 +59,15 @@
             For z As Integer = 0 To 3
                 cmbOption.Items(z) = Transport(z, LN) + "?"
             Next
-        ElseIf cmbPhrase.SelectedItem = Phrases(4, LN) + "?" Then
+        ElseIf cmbPhrase.SelectedItem = Phrases(4, LN) Then
             cmbOption.Visible = True
             For z As Integer = 0 To 9
                 cmbOption.Items(z) = Numbers(z, LN) + "..."
             Next
-        ElseIf cmbPhrase.SelectedItem = Phrases(8, LN) + "?" Then
+        ElseIf cmbPhrase.SelectedItem = Phrases(8, LN) + "..." Then
             txtOption.Visible = True
             txtOption.Text = uiLanguages(LN, LN) + "?"
-        ElseIf cmbPhrase.SelectedItem = Phrases(9, LN) + "?" Then
+        ElseIf cmbPhrase.SelectedItem = Phrases(9, LN) + "..." Then
             txtOption.Visible = True
             txtOption.Text = uiLanguages(TN, LN) + "."
         Else
@@ -68,15 +80,15 @@
                 txtTranslation.Text = Phrases(y, TN) + "?"
             ElseIf cmbOption.Text = " " Then
                 txtTranslation.Text = Phrases(y, TN) + "?"
-            ElseIf cmbPhrase.SelectedItem = Phrases(2, LN) Then
+            ElseIf cmbPhrase.SelectedItem = Phrases(2, LN) + "..." Then
                 txtTranslation.Text = Phrases(y, TN) + " " + Transport(b, TN) + "?"
             ElseIf cmbPhrase.SelectedItem = Phrases(4, LN) Then
                 txtTranslation.Text = Phrases(y, TN) + " " + Numbers(b, TN) + "..."
             End If
         ElseIf txtOption.Visible Then
-            If cmbPhrase.SelectedItem = Phrases(8, LN) + "?" Then
+            If cmbPhrase.SelectedItem = Phrases(8, LN) + "..." Then
                 txtTranslation.Text = Phrases(y, TN) + " " + uiLanguages(LN, TN) + "?"
-            ElseIf cmbPhrase.SelectedItem = Phrases(9, LN) + "?" Then
+            ElseIf cmbPhrase.SelectedItem = Phrases(9, LN) + "..." Then
                 txtTranslation.Text = Phrases(y, TN) + " " + uiLanguages(TN, TN) + "."
             End If
         Else
@@ -94,12 +106,12 @@
                 txtTranslation.Text = Phrases(y, TN) + "?"
             ElseIf cmbOption.Text = " " Then
                 txtTranslation.Text = Phrases(y, TN) + "?"
-            ElseIf cmbPhrase.SelectedItem = Phrases(2, LN) + "?" Then
+            ElseIf cmbPhrase.SelectedItem = Phrases(2, LN) + "..." Then
                 For z As Integer = 0 To 3
                     cmbOption.Items(z) = Transport(z, LN) + "?"
                 Next
                 txtTranslation.Text = Phrases(y, TN) + " " + Transport(b, TN) + "?"
-            ElseIf cmbPhrase.SelectedItem = Phrases(4, LN) + "?" Then
+            ElseIf cmbPhrase.SelectedItem = Phrases(4, LN) Then
                 For z As Integer = 0 To 9
                     cmbOption.Items(z) = Numbers(z, LN) + "..."
                 Next
