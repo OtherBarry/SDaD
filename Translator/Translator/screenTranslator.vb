@@ -87,9 +87,9 @@
             End If
         ElseIf txtOption.Visible Then
             If cmbPhrase.SelectedItem = Phrases(8, LN) + "..." Then
-                txtTranslation.Text = Phrases(y, TN) + " " + uiLanguages(LN, TN) + "?"
+                txtTranslation.Text = Phrases(8, TN) + " " + uiLanguages(LN, TN) + "?"
             ElseIf cmbPhrase.SelectedItem = Phrases(9, LN) + "..." Then
-                txtTranslation.Text = Phrases(y, TN) + " " + uiLanguages(TN, TN) + "."
+                txtTranslation.Text = Phrases(9, TN) + " " + uiLanguages(TN, TN) + "."
             End If
         Else
             txtTranslation.Text = Phrases(y, TN) + "?"

@@ -6,7 +6,8 @@
         btnOption.Text = uibOptions(LN)
         GroupLanguage.Text = uilSelectLang(LN)
         GroupCountry.Text = uilSelectCountry(LN)
-
+        chkLanguage.Text = uilFlags(LN) + " " + uilOn(LN)
+        chkNation.Text = uilFlags(LN) + " " + uilOn(LN)
         If usrName = "" Then
             lblWelcome.Text = uilWelcome(LN) + ", User!"
         Else
@@ -98,117 +99,7 @@
         Else
             GlobalVariables.TN = 0
         End If
-        If chkNation.Checked Then
-            chkNation.Text = "Flags On"
-            lblCountry1.Visible = True
-            lblCountry2.Visible = True
-            lblCountry3.Visible = True
-            lblCountry4.Visible = True
-            lblCountry5.Visible = True
-            lblCountry6.Visible = True
-            btnCountry1.Text = ""
-            btnCountry2.Text = ""
-            btnCountry3.Text = ""
-            btnCountry4.Text = ""
-            btnCountry5.Text = ""
-            btnCountry6.Text = ""
-            If TN = 1 Then
-                lblCountry1.Text = NationsFrench(LN, 0)
-                lblCountry2.Text = NationsFrench(LN, 1)
-                lblCountry3.Text = NationsFrench(LN, 2)
-                lblCountry4.Text = NationsFrench(LN, 3)
-                lblCountry5.Text = NationsFrench(LN, 4)
-                lblCountry6.Text = NationsFrench(LN, 5)
-                btnCountry1.BackgroundImage = FlagsFrench(0)
-                btnCountry2.BackgroundImage = FlagsFrench(1)
-                btnCountry3.BackgroundImage = FlagsFrench(2)
-                btnCountry4.BackgroundImage = FlagsFrench(3)
-                btnCountry5.BackgroundImage = FlagsFrench(4)
-                btnCountry6.BackgroundImage = FlagsFrench(5)
-            ElseIf TN = 2 Then
-                lblCountry1.Text = NationsSpanish(LN, 0)
-                lblCountry2.Text = NationsSpanish(LN, 1)
-                lblCountry3.Text = NationsSpanish(LN, 2)
-                lblCountry4.Text = NationsSpanish(LN, 3)
-                lblCountry5.Text = NationsSpanish(LN, 4)
-                lblCountry6.Text = NationsSpanish(LN, 5)
-                btnCountry1.BackgroundImage = FlagsSpanish(0)
-                btnCountry2.BackgroundImage = FlagsSpanish(1)
-                btnCountry3.BackgroundImage = FlagsSpanish(2)
-                btnCountry4.BackgroundImage = FlagsSpanish(3)
-                btnCountry5.BackgroundImage = FlagsSpanish(4)
-                btnCountry6.BackgroundImage = FlagsSpanish(5)
-            ElseIf TN = 3 Then
-                lblCountry1.Text = NationsPortuguese(LN, 0)
-                lblCountry2.Text = NationsPortuguese(LN, 1)
-                lblCountry3.Text = NationsPortuguese(LN, 2)
-                lblCountry4.Text = NationsPortuguese(LN, 3)
-                lblCountry5.Text = NationsPortuguese(LN, 4)
-                lblCountry6.Text = NationsPortuguese(LN, 5)
-                btnCountry1.BackgroundImage = FlagsPortugal(0)
-                btnCountry2.BackgroundImage = FlagsPortugal(1)
-                btnCountry3.BackgroundImage = FlagsPortugal(2)
-                btnCountry4.BackgroundImage = FlagsPortugal(3)
-                btnCountry5.BackgroundImage = FlagsPortugal(4)
-                btnCountry6.BackgroundImage = FlagsPortugal(5)
-            Else
-                lblCountry1.Text = NationsEnglish(LN, 0)
-                lblCountry2.Text = NationsEnglish(LN, 1)
-                lblCountry3.Text = NationsEnglish(LN, 2)
-                lblCountry4.Text = NationsEnglish(LN, 3)
-                lblCountry5.Text = NationsEnglish(LN, 4)
-                lblCountry6.Text = NationsEnglish(LN, 5)
-                btnCountry1.BackgroundImage = FlagsEnglish(0)
-                btnCountry2.BackgroundImage = FlagsEnglish(1)
-                btnCountry3.BackgroundImage = FlagsEnglish(2)
-                btnCountry4.BackgroundImage = FlagsEnglish(3)
-                btnCountry5.BackgroundImage = FlagsEnglish(4)
-                btnCountry6.BackgroundImage = FlagsEnglish(5)
-            End If
-        ElseIf chkNation.Checked = False Then
-            chkNation.Text = "Flags Off"
-            lblCountry1.Visible = False
-            lblCountry2.Visible = False
-            lblCountry3.Visible = False
-            lblCountry4.Visible = False
-            lblCountry5.Visible = False
-            lblCountry6.Visible = False
-            btnCountry1.BackgroundImage = Nothing
-            btnCountry2.BackgroundImage = Nothing
-            btnCountry3.BackgroundImage = Nothing
-            btnCountry4.BackgroundImage = Nothing
-            btnCountry5.BackgroundImage = Nothing
-            btnCountry6.BackgroundImage = Nothing
-            If TN = 1 Then
-                btnCountry1.Text = NationsFrench(LN, 0)
-                btnCountry2.Text = NationsFrench(LN, 1)
-                btnCountry3.Text = NationsFrench(LN, 2)
-                btnCountry4.Text = NationsFrench(LN, 3)
-                btnCountry5.Text = NationsFrench(LN, 4)
-                btnCountry6.Text = NationsFrench(LN, 5)
-            ElseIf TN = 2 Then
-                btnCountry1.Text = NationsSpanish(LN, 0)
-                btnCountry2.Text = NationsSpanish(LN, 1)
-                btnCountry3.Text = NationsSpanish(LN, 2)
-                btnCountry4.Text = NationsSpanish(LN, 3)
-                btnCountry5.Text = NationsSpanish(LN, 4)
-                btnCountry6.Text = NationsSpanish(LN, 5)
-            ElseIf TN = 3 Then
-                btnCountry1.Text = NationsPortuguese(LN, 0)
-                btnCountry2.Text = NationsPortuguese(LN, 1)
-                btnCountry3.Text = NationsPortuguese(LN, 2)
-                btnCountry4.Text = NationsPortuguese(LN, 3)
-                btnCountry5.Text = NationsPortuguese(LN, 4)
-                btnCountry6.Text = NationsPortuguese(LN, 5)
-            Else
-                btnCountry1.Text = NationsEnglish(LN, 0)
-                btnCountry2.Text = NationsEnglish(LN, 1)
-                btnCountry3.Text = NationsEnglish(LN, 2)
-                btnCountry4.Text = NationsEnglish(LN, 3)
-                btnCountry5.Text = NationsEnglish(LN, 4)
-                btnCountry6.Text = NationsEnglish(LN, 5)
-            End If
-        End If
+        chkBox()
     End Sub
 
     Private Sub rdoCente_Click(sender As Object, e As EventArgs) Handles rdoCente.Click
@@ -245,111 +136,7 @@
         Else
             GlobalVariables.TN = 0
         End If
-        If chkNation.Checked Then
-            chkNation.Text = "Flags On"
-            lblCountry1.Visible = True
-            lblCountry2.Visible = True
-            lblCountry3.Visible = True
-            lblCountry4.Visible = True
-            lblCountry5.Visible = True
-            lblCountry6.Visible = True
-            btnCountry1.Text = ""
-            btnCountry2.Text = ""
-            btnCountry3.Text = ""
-            btnCountry4.Text = ""
-            btnCountry5.Text = ""
-            btnCountry6.Text = ""
-            If TN = 1 Then
-                lblCountry1.Text = NationsFrench(LN, 0)
-                lblCountry2.Text = NationsFrench(LN, 1)
-                lblCountry3.Text = NationsFrench(LN, 2)
-                lblCountry4.Text = NationsFrench(LN, 3)
-                lblCountry5.Text = NationsFrench(LN, 4)
-                lblCountry6.Text = NationsFrench(LN, 5)
-                btnCountry1.BackgroundImage = FlagsFrench(0)
-                btnCountry2.BackgroundImage = FlagsFrench(1)
-                btnCountry3.BackgroundImage = FlagsFrench(2)
-                btnCountry4.BackgroundImage = FlagsFrench(3)
-                btnCountry5.BackgroundImage = FlagsFrench(4)
-                btnCountry6.BackgroundImage = FlagsFrench(5)
-            ElseIf TN = 2 Then
-                lblCountry1.Text = NationsSpanish(LN, 0)
-                lblCountry2.Text = NationsSpanish(LN, 1)
-                lblCountry3.Text = NationsSpanish(LN, 2)
-                lblCountry4.Text = NationsSpanish(LN, 3)
-                lblCountry5.Text = NationsSpanish(LN, 4)
-                lblCountry6.Text = NationsSpanish(LN, 5)
-                btnCountry1.BackgroundImage = FlagsSpanish(0)
-                btnCountry2.BackgroundImage = FlagsSpanish(1)
-                btnCountry3.BackgroundImage = FlagsSpanish(2)
-                btnCountry4.BackgroundImage = FlagsSpanish(3)
-                btnCountry5.BackgroundImage = FlagsSpanish(4)
-                btnCountry6.BackgroundImage = FlagsSpanish(5)
-            ElseIf TN = 3 Then
-                lblCountry1.Text = NationsPortuguese(LN, 0)
-                lblCountry2.Text = NationsPortuguese(LN, 1)
-                lblCountry3.Text = NationsPortuguese(LN, 2)
-                lblCountry4.Text = NationsPortuguese(LN, 3)
-                lblCountry5.Text = NationsPortuguese(LN, 4)
-                lblCountry6.Text = NationsPortuguese(LN, 5)
-                btnCountry1.BackgroundImage = FlagsPortugal(0)
-                btnCountry2.BackgroundImage = FlagsPortugal(1)
-                btnCountry3.BackgroundImage = FlagsPortugal(2)
-                btnCountry4.BackgroundImage = FlagsPortugal(3)
-                btnCountry5.BackgroundImage = FlagsPortugal(4)
-                btnCountry6.BackgroundImage = FlagsPortugal(5)
-            Else
-                lblCountry1.Text = NationsEnglish(LN, 0)
-                lblCountry2.Text = NationsEnglish(LN, 1)
-                lblCountry3.Text = NationsEnglish(LN, 2)
-                lblCountry4.Text = NationsEnglish(LN, 3)
-                lblCountry5.Text = NationsEnglish(LN, 4)
-                lblCountry6.Text = NationsEnglish(LN, 5)
-                btnCountry1.BackgroundImage = FlagsEnglish(0)
-                btnCountry2.BackgroundImage = FlagsEnglish(1)
-                btnCountry3.BackgroundImage = FlagsEnglish(2)
-                btnCountry4.BackgroundImage = FlagsEnglish(3)
-                btnCountry5.BackgroundImage = FlagsEnglish(4)
-                btnCountry6.BackgroundImage = FlagsEnglish(5)
-            End If
-        ElseIf chkNation.Checked = False Then
-            chkNation.Text = "Flags Off"
-            lblCountry1.Visible = False
-            lblCountry2.Visible = False
-            lblCountry3.Visible = False
-            lblCountry4.Visible = False
-            lblCountry5.Visible = False
-            lblCountry6.Visible = False
-            If TN = 1 Then
-                btnCountry1.Text = NationsFrench(LN, 0)
-                btnCountry2.Text = NationsFrench(LN, 1)
-                btnCountry3.Text = NationsFrench(LN, 2)
-                btnCountry4.Text = NationsFrench(LN, 3)
-                btnCountry5.Text = NationsFrench(LN, 4)
-                btnCountry6.Text = NationsFrench(LN, 5)
-            ElseIf TN = 2 Then
-                btnCountry1.Text = NationsSpanish(LN, 0)
-                btnCountry2.Text = NationsSpanish(LN, 1)
-                btnCountry3.Text = NationsSpanish(LN, 2)
-                btnCountry4.Text = NationsSpanish(LN, 3)
-                btnCountry5.Text = NationsSpanish(LN, 4)
-                btnCountry6.Text = NationsSpanish(LN, 5)
-            ElseIf TN = 3 Then
-                btnCountry1.Text = NationsPortuguese(LN, 0)
-                btnCountry2.Text = NationsPortuguese(LN, 1)
-                btnCountry3.Text = NationsPortuguese(LN, 2)
-                btnCountry4.Text = NationsPortuguese(LN, 3)
-                btnCountry5.Text = NationsPortuguese(LN, 4)
-                btnCountry6.Text = NationsPortuguese(LN, 5)
-            Else
-                btnCountry1.Text = NationsEnglish(LN, 0)
-                btnCountry2.Text = NationsEnglish(LN, 1)
-                btnCountry3.Text = NationsEnglish(LN, 2)
-                btnCountry4.Text = NationsEnglish(LN, 3)
-                btnCountry5.Text = NationsEnglish(LN, 4)
-                btnCountry6.Text = NationsEnglish(LN, 5)
-            End If
-        End If
+        chkBox()
     End Sub
 
     Private Sub rdoRight_Click(sender As Object, e As EventArgs) Handles rdoRight.Click
@@ -386,118 +173,7 @@
         Else
             GlobalVariables.TN = 0
         End If
-        If chkNation.Checked Then
-            chkNation.Text = "Flags On"
-            lblCountry1.Visible = True
-            lblCountry2.Visible = True
-            lblCountry3.Visible = True
-            lblCountry4.Visible = True
-            lblCountry5.Visible = True
-            lblCountry6.Visible = True
-            btnCountry1.Text = ""
-            btnCountry2.Text = ""
-            btnCountry3.Text = ""
-            btnCountry4.Text = ""
-            btnCountry5.Text = ""
-            btnCountry6.Text = ""
-            If TN = 1 Then
-                lblCountry1.Text = NationsFrench(LN, 0)
-                lblCountry2.Text = NationsFrench(LN, 1)
-                lblCountry3.Text = NationsFrench(LN, 2)
-                lblCountry4.Text = NationsFrench(LN, 3)
-                lblCountry5.Text = NationsFrench(LN, 4)
-                lblCountry6.Text = NationsFrench(LN, 5)
-                btnCountry1.BackgroundImage = FlagsFrench(0)
-                btnCountry2.BackgroundImage = FlagsFrench(1)
-                btnCountry3.BackgroundImage = FlagsFrench(2)
-                btnCountry4.BackgroundImage = FlagsFrench(3)
-                btnCountry5.BackgroundImage = FlagsFrench(4)
-                btnCountry6.BackgroundImage = FlagsFrench(5)
-            ElseIf TN = 2 Then
-                lblCountry1.Text = NationsSpanish(LN, 0)
-                lblCountry2.Text = NationsSpanish(LN, 1)
-                lblCountry3.Text = NationsSpanish(LN, 2)
-                lblCountry4.Text = NationsSpanish(LN, 3)
-                lblCountry5.Text = NationsSpanish(LN, 4)
-                lblCountry6.Text = NationsSpanish(LN, 5)
-                btnCountry1.BackgroundImage = FlagsSpanish(0)
-                btnCountry2.BackgroundImage = FlagsSpanish(1)
-                btnCountry3.BackgroundImage = FlagsSpanish(2)
-                btnCountry4.BackgroundImage = FlagsSpanish(3)
-                btnCountry5.BackgroundImage = FlagsSpanish(4)
-                btnCountry6.BackgroundImage = FlagsSpanish(5)
-            ElseIf TN = 3 Then
-                lblCountry1.Text = NationsPortuguese(LN, 0)
-                lblCountry2.Text = NationsPortuguese(LN, 1)
-                lblCountry3.Text = NationsPortuguese(LN, 2)
-                lblCountry4.Text = NationsPortuguese(LN, 3)
-                lblCountry5.Text = NationsPortuguese(LN, 4)
-                lblCountry6.Text = NationsPortuguese(LN, 5)
-                btnCountry1.BackgroundImage = FlagsPortugal(0)
-                btnCountry2.BackgroundImage = FlagsPortugal(1)
-                btnCountry3.BackgroundImage = FlagsPortugal(2)
-                btnCountry4.BackgroundImage = FlagsPortugal(3)
-                btnCountry5.BackgroundImage = FlagsPortugal(4)
-                btnCountry6.BackgroundImage = FlagsPortugal(5)
-            Else
-                lblCountry1.Text = NationsEnglish(LN, 0)
-                lblCountry2.Text = NationsEnglish(LN, 1)
-                lblCountry3.Text = NationsEnglish(LN, 2)
-                lblCountry4.Text = NationsEnglish(LN, 3)
-                lblCountry5.Text = NationsEnglish(LN, 4)
-                lblCountry6.Text = NationsEnglish(LN, 5)
-                btnCountry1.BackgroundImage = FlagsEnglish(0)
-                btnCountry2.BackgroundImage = FlagsEnglish(1)
-                btnCountry3.BackgroundImage = FlagsEnglish(2)
-                btnCountry4.BackgroundImage = FlagsEnglish(3)
-                btnCountry5.BackgroundImage = FlagsEnglish(4)
-                btnCountry6.BackgroundImage = FlagsEnglish(5)
-            End If
-        ElseIf chkNation.Checked = False Then
-            chkNation.Text = "Flags Off"
-            lblCountry1.Visible = False
-            lblCountry2.Visible = False
-            lblCountry3.Visible = False
-            lblCountry4.Visible = False
-            lblCountry5.Visible = False
-            lblCountry6.Visible = False
-            btnCountry1.BackgroundImage = Nothing
-            btnCountry2.BackgroundImage = Nothing
-            btnCountry3.BackgroundImage = Nothing
-            btnCountry4.BackgroundImage = Nothing
-            btnCountry5.BackgroundImage = Nothing
-            btnCountry6.BackgroundImage = Nothing
-            If TN = 1 Then
-                btnCountry1.Text = NationsFrench(LN, 0)
-                btnCountry2.Text = NationsFrench(LN, 1)
-                btnCountry3.Text = NationsFrench(LN, 2)
-                btnCountry4.Text = NationsFrench(LN, 3)
-                btnCountry5.Text = NationsFrench(LN, 4)
-                btnCountry6.Text = NationsFrench(LN, 5)
-            ElseIf TN = 2 Then
-                btnCountry1.Text = NationsSpanish(LN, 0)
-                btnCountry2.Text = NationsSpanish(LN, 1)
-                btnCountry3.Text = NationsSpanish(LN, 2)
-                btnCountry4.Text = NationsSpanish(LN, 3)
-                btnCountry5.Text = NationsSpanish(LN, 4)
-                btnCountry6.Text = NationsSpanish(LN, 5)
-            ElseIf TN = 3 Then
-                btnCountry1.Text = NationsPortuguese(LN, 0)
-                btnCountry2.Text = NationsPortuguese(LN, 1)
-                btnCountry3.Text = NationsPortuguese(LN, 2)
-                btnCountry4.Text = NationsPortuguese(LN, 3)
-                btnCountry5.Text = NationsPortuguese(LN, 4)
-                btnCountry6.Text = NationsPortuguese(LN, 5)
-            Else
-                btnCountry1.Text = NationsEnglish(LN, 0)
-                btnCountry2.Text = NationsEnglish(LN, 1)
-                btnCountry3.Text = NationsEnglish(LN, 2)
-                btnCountry4.Text = NationsEnglish(LN, 3)
-                btnCountry5.Text = NationsEnglish(LN, 4)
-                btnCountry6.Text = NationsEnglish(LN, 5)
-
-            End If
-        End If
+        chkBox()
     End Sub
 
     Private Sub chkLanguage_CheckedChanged(sender As Object, e As EventArgs) Handles chkLanguage.CheckedChanged
@@ -505,18 +181,18 @@
             flagLeft.Visible = True
             flagCenter.Visible = True
             flagRight.Visible = True
-            chkLanguage.Text = "Flags On"
+            chkLanguage.Text = uilFlags(LN) + " " + uilOn(LN)
         ElseIf chkLanguage.Checked = False Then
             flagLeft.Visible = False
             flagCenter.Visible = False
             flagRight.Visible = False
-            chkLanguage.Text = "Flags Off"
+            chkLanguage.Text = uilFlags(LN) + " " + uilOff(LN)
         End If
     End Sub
 
     Private Sub chkNation_CheckedChanged(sender As Object, e As EventArgs) Handles chkNation.CheckedChanged
         If chkNation.Checked Then
-            chkNation.Text = "Flags On"
+            chkNation.Text = uilFlags(LN) + " " + uilOn(LN)
             If rdoLeft.Checked Or rdoCente.Checked Or rdoRight.Checked Then
                 lblCountry1.Visible = True
                 lblCountry2.Visible = True
@@ -592,7 +268,7 @@
                 btnCountry6.BackgroundImage = FlagsEnglish(5)
             End If
         ElseIf chkNation.Checked = False Then
-            chkNation.Text = "Flags Off"
+            chkNation.Text = uilFlags(LN) + " " + uilOff(LN)
             lblCountry1.Visible = False
             lblCountry2.Visible = False
             lblCountry3.Visible = False

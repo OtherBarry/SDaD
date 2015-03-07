@@ -17,6 +17,7 @@
         btnNext.Text = uibNext(LN)
         lblLanguage.Text = uilSelectLang(LN)
         lblName.Text = uilName(LN)
+        lblHello.Text = uibOptions(LN)
         Me.Text = uilTrans(LN)
     End Sub
 
@@ -27,8 +28,10 @@
     Private Sub screenOptions_Load(sender As Object, e As EventArgs) Handles Me.Load
         btnExit.Text = uibExit(LN)
         btnNext.Text = uibHome(LN)
+        lblHello.Text = uibOptions(LN)
         lblLanguage.Text = uilSelectLang(LN)
         lblName.Text = uilName(LN)
         Me.Text = uilTrans(LN)
+        txtName.Text = usrName
     End Sub
 End Class

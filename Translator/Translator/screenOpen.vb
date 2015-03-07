@@ -5,6 +5,9 @@
     End Sub
 
     Private Sub btnNext_Click(sender As Object, e As EventArgs) Handles btnNext.Click
+        If usrName = "" Then
+            GlobalVariables.usrName = "User"
+        End If
         screenMain.Close()
         screenMain.Show()
         Me.Hide()

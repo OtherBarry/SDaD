@@ -362,7 +362,7 @@ Partial Class screenMain
         Me.lblWelcome.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.lblWelcome.AutoSize = True
         Me.lblWelcome.Font = New System.Drawing.Font("Monotype Corsiva", 36.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblWelcome.Location = New System.Drawing.Point(320, 9)
+        Me.lblWelcome.Location = New System.Drawing.Point(156, 9)
         Me.lblWelcome.Name = "lblWelcome"
         Me.lblWelcome.Size = New System.Drawing.Size(306, 57)
         Me.lblWelcome.TabIndex = 29
@@ -373,7 +373,7 @@ Partial Class screenMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(944, 501)
+        Me.ClientSize = New System.Drawing.Size(944, 502)
         Me.Controls.Add(Me.lblWelcome)
         Me.Controls.Add(Me.GroupCountry)
         Me.Controls.Add(Me.btnExit)

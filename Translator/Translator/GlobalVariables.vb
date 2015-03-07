@@ -1,4 +1,5 @@
 ﻿Module GlobalVariables
+
     Public usrLanguage As String
     Public LN As Integer
     Public TN As Integer
@@ -99,12 +100,130 @@
                               {"Parlée dans 52 pays", "Parlée dans 47 pays", "Parlée dans 22 pays", "Parlée dans 11 pays"},
                               {"Hablado en 52 países", "Hablado en 47 países", "Hablado en 22 países", "Hablado en 11 países"},
                               {"Faladas em 52 países", "Faladas em 47 países", "Faladas em 22 países", "Faladas em 11 países"}}
-
-
-
-
-
-
-
-
+    Public uilFlags = {"Flags", "Drapeaux", "Banderas", "Bandeiras"}
+    Public uilOn = {"On", "Sur", "En", "Em"}
+    Public uilOff = {"Off", "Hors", "Apagado", "Fora"}
+    Public lblCountryVisible() As Boolean = {screenMain.lblCountry1.Visible, screenMain.lblCountry2.Visible, screenMain.lblCountry3.Visible, screenMain.lblCountry4.Visible, screenMain.lblCountry5.Visible, screenMain.lblCountry6.Visible}
+    Sub chkBox()
+        If screenMain.chkNation.Checked Then
+            screenMain.chkNation.Text = uilFlags(LN) + " " + uilOn(LN)
+            If screenMain.rdoLeft.Checked Or screenMain.rdoCente.Checked Or screenMain.rdoRight.Checked Then
+                screenMain.lblCountry1.Visible = True
+                screenMain.lblCountry2.Visible = True
+                screenMain.lblCountry3.Visible = True
+                screenMain.lblCountry4.Visible = True
+                screenMain.lblCountry5.Visible = True
+                screenMain.lblCountry6.Visible = True
+            Else
+                screenMain.lblCountry1.Visible = False
+                screenMain.lblCountry2.Visible = False
+                screenMain.lblCountry3.Visible = False
+                screenMain.lblCountry4.Visible = False
+                screenMain.lblCountry5.Visible = False
+                screenMain.lblCountry6.Visible = False
+            End If
+            screenMain.btnCountry1.Text = ""
+            screenMain.btnCountry2.Text = ""
+            screenMain.btnCountry3.Text = ""
+            screenMain.btnCountry4.Text = ""
+            screenMain.btnCountry5.Text = ""
+            screenMain.btnCountry6.Text = ""
+            If TN = 1 Then
+                screenMain.lblCountry1.Text = NationsFrench(LN, 0)
+                screenMain.lblCountry2.Text = NationsFrench(LN, 1)
+                screenMain.lblCountry3.Text = NationsFrench(LN, 2)
+                screenMain.lblCountry4.Text = NationsFrench(LN, 3)
+                screenMain.lblCountry5.Text = NationsFrench(LN, 4)
+                screenMain.lblCountry6.Text = NationsFrench(LN, 5)
+                screenMain.btnCountry1.BackgroundImage = FlagsFrench(0)
+                screenMain.btnCountry2.BackgroundImage = FlagsFrench(1)
+                screenMain.btnCountry3.BackgroundImage = FlagsFrench(2)
+                screenMain.btnCountry4.BackgroundImage = FlagsFrench(3)
+                screenMain.btnCountry5.BackgroundImage = FlagsFrench(4)
+                screenMain.btnCountry6.BackgroundImage = FlagsFrench(5)
+            ElseIf TN = 2 Then
+                screenMain.lblCountry1.Text = NationsSpanish(LN, 0)
+                screenMain.lblCountry2.Text = NationsSpanish(LN, 1)
+                screenMain.lblCountry3.Text = NationsSpanish(LN, 2)
+                screenMain.lblCountry4.Text = NationsSpanish(LN, 3)
+                screenMain.lblCountry5.Text = NationsSpanish(LN, 4)
+                screenMain.lblCountry6.Text = NationsSpanish(LN, 5)
+                screenMain.btnCountry1.BackgroundImage = FlagsSpanish(0)
+                screenMain.btnCountry2.BackgroundImage = FlagsSpanish(1)
+                screenMain.btnCountry3.BackgroundImage = FlagsSpanish(2)
+                screenMain.btnCountry4.BackgroundImage = FlagsSpanish(3)
+                screenMain.btnCountry5.BackgroundImage = FlagsSpanish(4)
+                screenMain.btnCountry6.BackgroundImage = FlagsSpanish(5)
+            ElseIf TN = 3 Then
+                screenMain.lblCountry1.Text = NationsPortuguese(LN, 0)
+                screenMain.lblCountry2.Text = NationsPortuguese(LN, 1)
+                screenMain.lblCountry3.Text = NationsPortuguese(LN, 2)
+                screenMain.lblCountry4.Text = NationsPortuguese(LN, 3)
+                screenMain.lblCountry5.Text = NationsPortuguese(LN, 4)
+                screenMain.lblCountry6.Text = NationsPortuguese(LN, 5)
+                screenMain.btnCountry1.BackgroundImage = FlagsPortugal(0)
+                screenMain.btnCountry2.BackgroundImage = FlagsPortugal(1)
+                screenMain.btnCountry3.BackgroundImage = FlagsPortugal(2)
+                screenMain.btnCountry4.BackgroundImage = FlagsPortugal(3)
+                screenMain.btnCountry5.BackgroundImage = FlagsPortugal(4)
+                screenMain.btnCountry6.BackgroundImage = FlagsPortugal(5)
+            Else
+                screenMain.lblCountry1.Text = NationsEnglish(LN, 0)
+                screenMain.lblCountry2.Text = NationsEnglish(LN, 1)
+                screenMain.lblCountry3.Text = NationsEnglish(LN, 2)
+                screenMain.lblCountry4.Text = NationsEnglish(LN, 3)
+                screenMain.lblCountry5.Text = NationsEnglish(LN, 4)
+                screenMain.lblCountry6.Text = NationsEnglish(LN, 5)
+                screenMain.btnCountry1.BackgroundImage = FlagsEnglish(0)
+                screenMain.btnCountry2.BackgroundImage = FlagsEnglish(1)
+                screenMain.btnCountry3.BackgroundImage = FlagsEnglish(2)
+                screenMain.btnCountry4.BackgroundImage = FlagsEnglish(3)
+                screenMain.btnCountry5.BackgroundImage = FlagsEnglish(4)
+                screenMain.btnCountry6.BackgroundImage = FlagsEnglish(5)
+            End If
+        ElseIf screenMain.chkNation.Checked = False Then
+            screenMain.chkNation.Text = uilFlags(LN) + " " + uilOff(LN)
+            screenMain.lblCountry1.Visible = False
+            screenMain.lblCountry2.Visible = False
+            screenMain.lblCountry3.Visible = False
+            screenMain.lblCountry4.Visible = False
+            screenMain.lblCountry5.Visible = False
+            screenMain.lblCountry6.Visible = False
+            screenMain.btnCountry1.BackgroundImage = Nothing
+            screenMain.btnCountry2.BackgroundImage = Nothing
+            screenMain.btnCountry3.BackgroundImage = Nothing
+            screenMain.btnCountry4.BackgroundImage = Nothing
+            screenMain.btnCountry5.BackgroundImage = Nothing
+            screenMain.btnCountry6.BackgroundImage = Nothing
+            If TN = 1 Then
+                screenMain.btnCountry1.Text = NationsFrench(LN, 0)
+                screenMain.btnCountry2.Text = NationsFrench(LN, 1)
+                screenMain.btnCountry3.Text = NationsFrench(LN, 2)
+                screenMain.btnCountry4.Text = NationsFrench(LN, 3)
+                screenMain.btnCountry5.Text = NationsFrench(LN, 4)
+                screenMain.btnCountry6.Text = NationsFrench(LN, 5)
+            ElseIf TN = 2 Then
+                screenMain.btnCountry1.Text = NationsSpanish(LN, 0)
+                screenMain.btnCountry2.Text = NationsSpanish(LN, 1)
+                screenMain.btnCountry3.Text = NationsSpanish(LN, 2)
+                screenMain.btnCountry4.Text = NationsSpanish(LN, 3)
+                screenMain.btnCountry5.Text = NationsSpanish(LN, 4)
+                screenMain.btnCountry6.Text = NationsSpanish(LN, 5)
+            ElseIf TN = 3 Then
+                screenMain.btnCountry1.Text = NationsPortuguese(LN, 0)
+                screenMain.btnCountry2.Text = NationsPortuguese(LN, 1)
+                screenMain.btnCountry3.Text = NationsPortuguese(LN, 2)
+                screenMain.btnCountry4.Text = NationsPortuguese(LN, 3)
+                screenMain.btnCountry5.Text = NationsPortuguese(LN, 4)
+                screenMain.btnCountry6.Text = NationsPortuguese(LN, 5)
+            Else
+                screenMain.btnCountry1.Text = NationsEnglish(LN, 0)
+                screenMain.btnCountry2.Text = NationsEnglish(LN, 1)
+                screenMain.btnCountry3.Text = NationsEnglish(LN, 2)
+                screenMain.btnCountry4.Text = NationsEnglish(LN, 3)
+                screenMain.btnCountry5.Text = NationsEnglish(LN, 4)
+                screenMain.btnCountry6.Text = NationsEnglish(LN, 5)
+            End If
+        End If
+    End Sub
 End Module
