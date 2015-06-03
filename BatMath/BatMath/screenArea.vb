@@ -13,7 +13,7 @@
         lblTitle.Text = Shapes2D(ShapeNum)
         If ShapeNum = 0 Then 'Circle
             picShape.Image = My.Resources.circle
-            lbl1.Text = "Radius Length"
+            lbl1.Text = "Radius"
             AreaVal = (input1.Value ^ 2) * pi
             Output1.Text = input1.Value.ToString + "² × pi = " + Decimal.Round(AreaVal, 0, MidpointRounding.AwayFromZero).ToString + " cm²"
         ElseIf ShapeNum = 1 Then 'Square
@@ -75,11 +75,39 @@
 
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
         screenHome.Show()
-        Me.Hide()
+        Me.Close()
     End Sub
 
     Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
         screenQuiz.Show()
         Me.Hide()
+    End Sub
+
+    Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles PictureBox2.Click
+        screenExit.Show()
+    End Sub
+
+    Private Sub PictureBox1_MouseEnter(sender As Object, e As EventArgs) Handles PictureBox1.MouseEnter
+        PictureBox1.BackColor = ColorTranslator.FromHtml("#FFDE21")
+    End Sub
+
+    Private Sub PictureBox1_MouseLeave(sender As Object, e As EventArgs) Handles PictureBox1.MouseLeave
+        PictureBox1.BackColor = Nothing
+    End Sub
+
+    Private Sub PictureBox2_MouseEnter(sender As Object, e As EventArgs) Handles PictureBox2.MouseEnter
+        PictureBox2.BackColor = ColorTranslator.FromHtml("#FFDE21")
+    End Sub
+
+    Private Sub PictureBox2_MouseLeave(sender As Object, e As EventArgs) Handles PictureBox2.MouseLeave
+        PictureBox2.BackColor = Nothing
+    End Sub
+
+    Private Sub Label2_MouseEnter(sender As Object, e As EventArgs) Handles Label1.MouseEnter
+        Label1.ForeColor = ColorTranslator.FromHtml("#FFDE21")
+    End Sub
+
+    Private Sub Label2_MouseLeave(sender As Object, e As EventArgs) Handles Label1.MouseLeave
+        Label1.ForeColor = Color.Black
     End Sub
 End Class

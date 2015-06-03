@@ -40,37 +40,37 @@
             screenArea.Show()
     End Sub
 
-    Private Sub lblCircle_Leave(sender As Object, e As EventArgs) Handles lblCircle.Leave
+    Private Sub lblCircle_Leave(sender As Object, e As EventArgs) Handles lblCircle.Leave, picCircle.MouseLeave
         lblCircle.Parent = Me
         lblCircle.BackColor = Color.Transparent
         picCircle.Visible = False
     End Sub
 
-    Private Sub lblHexagon_Leave(sender As Object, e As EventArgs) Handles lblHexagon.Leave
+    Private Sub lblHexagon_Leave(sender As Object, e As EventArgs) Handles lblHexagon.Leave, picHexagon.MouseLeave
         lblHexagon.Parent = Me
         lblHexagon.BackColor = Color.Transparent
         picHexagon.Visible = False
     End Sub
 
-    Private Sub lblPentagon_Leave(sender As Object, e As EventArgs) Handles lblPentagon.Leave
+    Private Sub lblPentagon_Leave(sender As Object, e As EventArgs) Handles lblPentagon.Leave, picPentagon.MouseLeave
         lblPentagon.Parent = Me
         lblPentagon.BackColor = Color.Transparent
         picPentagon.Visible = False
     End Sub
 
-    Private Sub lblRectangle_Leave(sender As Object, e As EventArgs) Handles lblRectangle.Leave
+    Private Sub lblRectangle_Leave(sender As Object, e As EventArgs) Handles lblRectangle.Leave, picRectangle.MouseLeave
         lblRectangle.Parent = Me
         lblRectangle.BackColor = Color.Transparent
         picRectangle.Visible = False
     End Sub
 
-    Private Sub lblSquare_Leave(sender As Object, e As EventArgs) Handles lblSquare.Leave
+    Private Sub lblSquare_Leave(sender As Object, e As EventArgs) Handles lblSquare.Leave, picSquare.MouseLeave
         lblSquare.Parent = Me
         lblSquare.BackColor = Color.Transparent
         picSquare.Visible = False
     End Sub
 
-    Private Sub lblTriangle_Leave(sender As Object, e As EventArgs) Handles lblTriangle.Leave
+    Private Sub lblTriangle_Leave(sender As Object, e As EventArgs) Handles lblTriangle.Leave, picTriangle.MouseLeave
         lblTriangle.Parent = Me
         lblTriangle.BackColor = Color.Transparent
         picTriangle.Visible = False
@@ -115,5 +115,25 @@
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
         screenHome.Show()
         Me.Hide()
+    End Sub
+
+    Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles PictureBox2.Click
+        screenExit.Show()
+    End Sub
+
+    Private Sub PictureBox1_MouseEnter(sender As Object, e As EventArgs) Handles PictureBox1.MouseEnter
+        PictureBox1.BackColor = ColorTranslator.FromHtml("#FFDE21")
+    End Sub
+
+    Private Sub PictureBox1_MouseLeave(sender As Object, e As EventArgs) Handles PictureBox1.MouseLeave
+        PictureBox1.BackColor = Nothing
+    End Sub
+
+    Private Sub PictureBox2_MouseEnter(sender As Object, e As EventArgs) Handles PictureBox2.MouseEnter
+        PictureBox2.BackColor = ColorTranslator.FromHtml("#FFDE21")
+    End Sub
+
+    Private Sub PictureBox2_MouseLeave(sender As Object, e As EventArgs) Handles PictureBox2.MouseLeave
+        PictureBox2.BackColor = Nothing
     End Sub
 End Class

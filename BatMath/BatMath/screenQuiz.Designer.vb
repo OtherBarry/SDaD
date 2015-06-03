@@ -31,7 +31,9 @@ Partial Class screenQuiz
         Me.RadioButton3 = New System.Windows.Forms.RadioButton()
         Me.RadioButton4 = New System.Windows.Forms.RadioButton()
         Me.btnNext = New System.Windows.Forms.Button()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -39,6 +41,7 @@ Partial Class screenQuiz
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("BatmanForeverAlternate", 50.0!)
+        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(222, Byte), Integer), CType(CType(33, Byte), Integer))
         Me.Label1.Location = New System.Drawing.Point(12, 9)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(212, 63)
@@ -48,6 +51,7 @@ Partial Class screenQuiz
         'lblComplete
         '
         Me.lblComplete.Font = New System.Drawing.Font("BatmanForeverAlternate", 15.0!)
+        Me.lblComplete.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(66, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.lblComplete.Location = New System.Drawing.Point(19, 84)
         Me.lblComplete.Name = "lblComplete"
         Me.lblComplete.Size = New System.Drawing.Size(244, 23)
@@ -58,6 +62,7 @@ Partial Class screenQuiz
         'lblCorrect
         '
         Me.lblCorrect.Font = New System.Drawing.Font("BatmanForeverAlternate", 15.0!)
+        Me.lblCorrect.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(66, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.lblCorrect.Location = New System.Drawing.Point(260, 84)
         Me.lblCorrect.Name = "lblCorrect"
         Me.lblCorrect.Size = New System.Drawing.Size(240, 19)
@@ -70,9 +75,11 @@ Partial Class screenQuiz
         Me.txtQuestion.BackColor = System.Drawing.Color.FromArgb(CType(CType(54, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(79, Byte), Integer))
         Me.txtQuestion.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.txtQuestion.Font = New System.Drawing.Font("BatmanForeverAlternate", 15.0!)
+        Me.txtQuestion.ForeColor = System.Drawing.Color.Black
         Me.txtQuestion.Location = New System.Drawing.Point(12, 126)
         Me.txtQuestion.Multiline = True
         Me.txtQuestion.Name = "txtQuestion"
+        Me.txtQuestion.ReadOnly = True
         Me.txtQuestion.Size = New System.Drawing.Size(488, 43)
         Me.txtQuestion.TabIndex = 3
         Me.txtQuestion.Text = "What is the formula for the area of a pentagon?"
@@ -81,6 +88,7 @@ Partial Class screenQuiz
         '
         Me.RadioButton1.AutoSize = True
         Me.RadioButton1.Font = New System.Drawing.Font("BatmanForeverAlternate", 15.0!)
+        Me.RadioButton1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(222, Byte), Integer), CType(CType(33, Byte), Integer))
         Me.RadioButton1.Location = New System.Drawing.Point(48, 201)
         Me.RadioButton1.Name = "RadioButton1"
         Me.RadioButton1.Size = New System.Drawing.Size(207, 23)
@@ -93,6 +101,7 @@ Partial Class screenQuiz
         '
         Me.RadioButton2.AutoSize = True
         Me.RadioButton2.Font = New System.Drawing.Font("BatmanForeverAlternate", 15.0!)
+        Me.RadioButton2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(222, Byte), Integer), CType(CType(33, Byte), Integer))
         Me.RadioButton2.Location = New System.Drawing.Point(48, 276)
         Me.RadioButton2.Name = "RadioButton2"
         Me.RadioButton2.Size = New System.Drawing.Size(218, 23)
@@ -105,6 +114,7 @@ Partial Class screenQuiz
         '
         Me.RadioButton3.AutoSize = True
         Me.RadioButton3.Font = New System.Drawing.Font("BatmanForeverAlternate", 15.0!)
+        Me.RadioButton3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(222, Byte), Integer), CType(CType(33, Byte), Integer))
         Me.RadioButton3.Location = New System.Drawing.Point(48, 351)
         Me.RadioButton3.Name = "RadioButton3"
         Me.RadioButton3.Size = New System.Drawing.Size(218, 23)
@@ -117,6 +127,7 @@ Partial Class screenQuiz
         '
         Me.RadioButton4.AutoSize = True
         Me.RadioButton4.Font = New System.Drawing.Font("BatmanForeverAlternate", 15.0!)
+        Me.RadioButton4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(222, Byte), Integer), CType(CType(33, Byte), Integer))
         Me.RadioButton4.Location = New System.Drawing.Point(48, 426)
         Me.RadioButton4.Name = "RadioButton4"
         Me.RadioButton4.Size = New System.Drawing.Size(218, 23)
@@ -143,6 +154,16 @@ Partial Class screenQuiz
         Me.btnNext.Text = "Next Question"
         Me.btnNext.UseVisualStyleBackColor = False
         '
+        'PictureBox2
+        '
+        Me.PictureBox2.Image = Global.BatMath.My.Resources.Resources.iconsineed_cross_24_128
+        Me.PictureBox2.Location = New System.Drawing.Point(368, 9)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(63, 63)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox2.TabIndex = 16
+        Me.PictureBox2.TabStop = False
+        '
         'PictureBox1
         '
         Me.PictureBox1.Image = Global.BatMath.My.Resources.Resources.HomeIcon
@@ -159,6 +180,7 @@ Partial Class screenQuiz
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(54, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(79, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(512, 576)
+        Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.btnNext)
         Me.Controls.Add(Me.RadioButton4)
@@ -171,7 +193,9 @@ Partial Class screenQuiz
         Me.Controls.Add(Me.Label1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "screenQuiz"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "screenQuiz"
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -187,4 +211,5 @@ Partial Class screenQuiz
     Friend WithEvents RadioButton4 As System.Windows.Forms.RadioButton
     Friend WithEvents btnNext As System.Windows.Forms.Button
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
 End Class

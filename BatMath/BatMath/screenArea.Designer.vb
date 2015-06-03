@@ -30,16 +30,18 @@ Partial Class screenArea
         Me.lblTitle = New System.Windows.Forms.Label()
         Me.lbl1 = New System.Windows.Forms.Label()
         Me.lbl2 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.picShape = New System.Windows.Forms.PictureBox()
-        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.picCorner = New System.Windows.Forms.PictureBox()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         CType(Me.input1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.input2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.input3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picShape, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picCorner, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'input1
@@ -91,9 +93,9 @@ Partial Class screenArea
         '
         Me.lbl3.Font = New System.Drawing.Font("BatmanForeverAlternate", 25.0!)
         Me.lbl3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(66, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.lbl3.Location = New System.Drawing.Point(488, 283)
+        Me.lbl3.Location = New System.Drawing.Point(496, 283)
         Me.lbl3.Name = "lbl3"
-        Me.lbl3.Size = New System.Drawing.Size(313, 31)
+        Me.lbl3.Size = New System.Drawing.Size(305, 31)
         Me.lbl3.TabIndex = 5
         Me.lbl3.Text = "Label3"
         Me.lbl3.TextAlign = System.Drawing.ContentAlignment.TopRight
@@ -113,9 +115,9 @@ Partial Class screenArea
         '
         Me.lbl1.Font = New System.Drawing.Font("BatmanForeverAlternate", 25.0!)
         Me.lbl1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(66, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.lbl1.Location = New System.Drawing.Point(445, 203)
+        Me.lbl1.Location = New System.Drawing.Point(496, 203)
         Me.lbl1.Name = "lbl1"
-        Me.lbl1.Size = New System.Drawing.Size(356, 31)
+        Me.lbl1.Size = New System.Drawing.Size(305, 31)
         Me.lbl1.TabIndex = 8
         Me.lbl1.Text = "lbl1"
         Me.lbl1.TextAlign = System.Drawing.ContentAlignment.TopRight
@@ -124,12 +126,22 @@ Partial Class screenArea
         '
         Me.lbl2.Font = New System.Drawing.Font("BatmanForeverAlternate", 25.0!)
         Me.lbl2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(66, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.lbl2.Location = New System.Drawing.Point(476, 243)
+        Me.lbl2.Location = New System.Drawing.Point(496, 243)
         Me.lbl2.Name = "lbl2"
-        Me.lbl2.Size = New System.Drawing.Size(325, 31)
+        Me.lbl2.Size = New System.Drawing.Size(305, 31)
         Me.lbl2.TabIndex = 9
         Me.lbl2.Text = "Label2"
         Me.lbl2.TextAlign = System.Drawing.ContentAlignment.TopRight
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("BatmanForeverAlternate", 25.0!)
+        Me.Label1.Location = New System.Drawing.Point(602, 442)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(376, 31)
+        Me.Label1.TabIndex = 16
+        Me.Label1.Text = "Test yourself!"
         '
         'PictureBox1
         '
@@ -148,29 +160,29 @@ Partial Class screenArea
         Me.picShape.Location = New System.Drawing.Point(245, 201)
         Me.picShape.Name = "picShape"
         Me.picShape.Size = New System.Drawing.Size(250, 250)
-        Me.picShape.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picShape.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.picShape.TabIndex = 14
         Me.picShape.TabStop = False
         '
-        'PictureBox4
+        'picCorner
         '
-        Me.PictureBox4.Image = Global.BatMath.My.Resources.Resources.atman
-        Me.PictureBox4.Location = New System.Drawing.Point(0, 316)
-        Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(380, 260)
-        Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox4.TabIndex = 10
-        Me.PictureBox4.TabStop = False
+        Me.picCorner.Image = Global.BatMath.My.Resources.Resources.atman
+        Me.picCorner.Location = New System.Drawing.Point(0, 316)
+        Me.picCorner.Name = "picCorner"
+        Me.picCorner.Size = New System.Drawing.Size(380, 260)
+        Me.picCorner.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picCorner.TabIndex = 10
+        Me.picCorner.TabStop = False
         '
-        'Label1
+        'PictureBox2
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("BatmanForeverAlternate", 25.0!)
-        Me.Label1.Location = New System.Drawing.Point(602, 442)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(376, 31)
-        Me.Label1.TabIndex = 16
-        Me.Label1.Text = "Test yourself!"
+        Me.PictureBox2.Image = Global.BatMath.My.Resources.Resources.iconsineed_cross_24_128
+        Me.PictureBox2.Location = New System.Drawing.Point(880, 12)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(63, 63)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox2.TabIndex = 17
+        Me.PictureBox2.TabStop = False
         '
         'screenArea
         '
@@ -178,6 +190,7 @@ Partial Class screenArea
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(54, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(79, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1024, 576)
+        Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.lbl3)
@@ -185,7 +198,7 @@ Partial Class screenArea
         Me.Controls.Add(Me.lbl1)
         Me.Controls.Add(Me.picShape)
         Me.Controls.Add(Me.Output1)
-        Me.Controls.Add(Me.PictureBox4)
+        Me.Controls.Add(Me.picCorner)
         Me.Controls.Add(Me.lblTitle)
         Me.Controls.Add(Me.input3)
         Me.Controls.Add(Me.input2)
@@ -199,7 +212,8 @@ Partial Class screenArea
         CType(Me.input3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picShape, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picCorner, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -212,8 +226,9 @@ Partial Class screenArea
     Friend WithEvents lblTitle As System.Windows.Forms.Label
     Friend WithEvents lbl1 As System.Windows.Forms.Label
     Friend WithEvents lbl2 As System.Windows.Forms.Label
-    Friend WithEvents PictureBox4 As System.Windows.Forms.PictureBox
+    Friend WithEvents picCorner As System.Windows.Forms.PictureBox
     Friend WithEvents picShape As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
 End Class

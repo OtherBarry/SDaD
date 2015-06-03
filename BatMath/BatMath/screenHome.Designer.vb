@@ -23,32 +23,24 @@ Partial Class screenHome
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.lblName = New System.Windows.Forms.Label()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.lblArea = New System.Windows.Forms.Label()
         Me.lblVolume = New System.Windows.Forms.Label()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.picCorner = New System.Windows.Forms.PictureBox()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picCorner, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'lblName
         '
         Me.lblName.AutoSize = True
         Me.lblName.Font = New System.Drawing.Font("BatmanForeverAlternate", 99.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblName.ForeColor = System.Drawing.Color.Black
+        Me.lblName.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(222, Byte), Integer), CType(CType(33, Byte), Integer))
         Me.lblName.Location = New System.Drawing.Point(87, 87)
         Me.lblName.Name = "lblName"
         Me.lblName.Size = New System.Drawing.Size(850, 124)
         Me.lblName.TabIndex = 0
         Me.lblName.Text = "BatMath"
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.Image = Global.BatMath.My.Resources.Resources.atman
-        Me.PictureBox1.Location = New System.Drawing.Point(0, 316)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(380, 260)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 1
-        Me.PictureBox1.TabStop = False
         '
         'lblArea
         '
@@ -73,28 +65,51 @@ Partial Class screenHome
         Me.lblVolume.TabIndex = 3
         Me.lblVolume.Text = "Volume"
         '
+        'PictureBox2
+        '
+        Me.PictureBox2.Image = Global.BatMath.My.Resources.Resources.iconsineed_cross_24_128
+        Me.PictureBox2.Location = New System.Drawing.Point(949, 12)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(63, 63)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox2.TabIndex = 16
+        Me.PictureBox2.TabStop = False
+        '
+        'picCorner
+        '
+        Me.picCorner.Image = Global.BatMath.My.Resources.Resources.atman
+        Me.picCorner.Location = New System.Drawing.Point(0, 317)
+        Me.picCorner.Name = "picCorner"
+        Me.picCorner.Size = New System.Drawing.Size(380, 260)
+        Me.picCorner.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picCorner.TabIndex = 1
+        Me.picCorner.TabStop = False
+        '
         'screenHome
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(54, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(79, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1024, 576)
+        Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.lblVolume)
         Me.Controls.Add(Me.lblName)
         Me.Controls.Add(Me.lblArea)
-        Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.picCorner)
         Me.ForeColor = System.Drawing.Color.White
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "screenHome"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "screenHome"
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picCorner, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
     Friend WithEvents lblName As System.Windows.Forms.Label
-    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
+    Friend WithEvents picCorner As System.Windows.Forms.PictureBox
     Friend WithEvents lblArea As System.Windows.Forms.Label
     Friend WithEvents lblVolume As System.Windows.Forms.Label
+    Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
 End Class

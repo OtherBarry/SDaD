@@ -33,13 +33,13 @@ Partial Class screenLoad
         '
         'Timer
         '
-        Me.Timer.Interval = 5000
+        Me.Timer.Interval = 1
         '
         'lblLoading
         '
         Me.lblLoading.AutoSize = True
         Me.lblLoading.Font = New System.Drawing.Font("BatmanForeverAlternate", 29.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblLoading.ForeColor = System.Drawing.Color.White
+        Me.lblLoading.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(222, Byte), Integer), CType(CType(33, Byte), Integer))
         Me.lblLoading.Location = New System.Drawing.Point(84, 23)
         Me.lblLoading.Name = "lblLoading"
         Me.lblLoading.Size = New System.Drawing.Size(241, 36)

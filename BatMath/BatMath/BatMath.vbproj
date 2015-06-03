@@ -86,10 +86,33 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="screenExit.Designer.vb">
+      <DependentUpon>screenExit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="screenExit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="screenQuiz.Designer.vb">
       <DependentUpon>screenQuiz.vb</DependentUpon>
     </Compile>
     <Compile Include="screenQuiz.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="screenQuizVolume.Designer.vb">
+      <DependentUpon>screenQuizVolume.vb</DependentUpon>
+    </Compile>
+    <Compile Include="screenQuizVolume.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="screenSelectVolume.Designer.vb">
+      <DependentUpon>screenSelectVolume.vb</DependentUpon>
+    </Compile>
+    <Compile Include="screenSelectVolume.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="screenVolume.Designer.vb">
@@ -122,11 +145,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Application.myapp</DependentUpon>
     </Compile>
-    <Compile Include="My Project\Resources.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
     <Compile Include="My Project\Settings.Designer.vb">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -140,8 +158,17 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="screenExit.resx">
+      <DependentUpon>screenExit.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="screenQuiz.resx">
       <DependentUpon>screenQuiz.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="screenQuizVolume.resx">
+      <DependentUpon>screenQuizVolume.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="screenSelectVolume.resx">
+      <DependentUpon>screenSelectVolume.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="screenVolume.resx">
       <DependentUpon>screenVolume.vb</DependentUpon>
@@ -157,9 +184,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="screenSelect.resx">
       <DependentUpon>screenSelect.vb</DependentUpon>
@@ -383,6 +410,16 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Deets.txt" />
+    <None Include="Resources\iconsineed-cross-24-128.png" />
+    <None Include="Resources\BatmanMain.wav" />
+    <None Include="Resources\BatmanOpening.wav" />
+    <None Include="Resources\Old_Batman_TV_Show_Theme_Song.wav" />
+    <None Include="Resources\blue-cone.jpg" />
+    <None Include="Resources\blue-cuboid.jpg" />
+    <None Include="Resources\blue-cube.jpg" />
+    <None Include="Resources\blue-square-pyramid.jpg" />
+    <None Include="Resources\blue-sphere.jpg" />
+    <None Include="Resources\blue-cylinder.jpg" />
     <None Include="Resources\HomeIcon.png" />
     <None Include="Resources\home.png" />
     <None Include="Resources\triangle.png" />

@@ -127,212 +127,14 @@
   <data name="atman" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\atman.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Baman" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Baman.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="batm" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\batm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="BatMa" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\BatMa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="batman" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\batman.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="BatmanArkhamAsylum" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\BatmanArkhamAsylum.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="BatmanLoad" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BatmanLoad.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="BatmanRender" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\BatmanRender.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="batmanrenderneod_cop2y" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\batmanrenderneod-cop2y.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="BatmanToon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\BatmanToon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Batman_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Batman-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Batman_202" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Batman%202.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="batman_2608" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\batman_2608.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Batman_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Batman_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Batman_34" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Batman-34.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Batman_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Batman-4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Batman_Animated_02_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Batman-Animated-02-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Batman_Arkham_Asylum_Render_psd34809" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Batman-Arkham-Asylum-Render-psd34809.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="batman_arkham_asylum_sigtutorials" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\batman-arkham-asylum-sigtutorials.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Batman_fireproof" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Batman_fireproof.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="batman_render" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\batman+render.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Batman_Render1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Batman-Render.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="batman_render_005_by_seadaemon_d5imuoo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\batman_render_005_by_seadaemon-d5imuoo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Batman_render_01_lo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Batman_render_01_lo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Batman_Vengance" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Batman-Vengance.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Batmn" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Batmn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ba_tman" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ba tman.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Copia_de_1_render__63_" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Copia de 1_render__63_.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Copia_de_2cg1pck" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Copia de 2cg1pck.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Copia_de_5557_render_01825420_photo_batman_arkham_asylum" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Copia de 5557_render_01825420_photo_batman_arkham_asylum.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Copia_de_6841_render_joker_12" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Copia de 6841_render_joker_12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Copia_de_9335_render_BatmanAnime1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Copia de 9335_render_BatmanAnime1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Copia_de_batm" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Copia de batm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Copia_de_BatMa" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Copia de BatMa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="eraabylego" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\eraabylego.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="joker" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\joker.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="joker2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\joker2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="joker21qg1gq" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\joker21qg1gq.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Joker_Cutout" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Joker_Cutout.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="joker_cut_out" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\joker-cut-out.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="joker_render__render_warcraft__the_joker_render__world_of_warcraft_render" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\joker render, render warcraft, the joker render, world of warcraft render.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="mkvsdc_batman" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mkvsdc_batman.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="normal_Batman1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\normal_Batman1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="normal_batman_1910" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\normal_batman_1910.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="normal_batman_28329" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\normal_batman_28329.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="render_batman4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\render+batman4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="render_batman_3_by_kypexfly_d5806tv" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\render_batman_3_by_kypexfly-d5806tv.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="render_batman_exclusivo_panico_renders" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\render+batman+exclusivo+panico+renders.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="the_dark_knight_batman" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\the-dark-knight-batman.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="void_0_" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\void(0).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="_14" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\14.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="_1837_batman_ac_bruce_wayne_prev" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\1837_batman-ac-bruce-wayne-prev.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="_1841_batman_ac_gargoyle_prev" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\1841_batman-ac-gargoyle-prev.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="_1907591_screenshot017x" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\1907591-screenshot017x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="_1_render__63_" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\1_render__63_.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="_208a1wj" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\208a1wj.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="_2758_batman_arkham_city_prev" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\2758_batman-arkham-city-prev.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="_2779_render_Joker" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\2779_render_Joker.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="_2cg1pck" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\2cg1pck.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="_5557_render_01825420_photo_batman_arkham_asylum" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\5557_render_01825420_photo_batman_arkham_asylum.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="_664AA87C0" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\664AA87C0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="_6841_render_joker_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\6841_render_joker_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="_6841_render_joker_12" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\6841_render_joker_12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="_9335_render_BatmanAnime1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\9335_render_BatmanAnime1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="_9415_render_render_joker" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\9415_render_render_joker.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="botmon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\botmon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="pb_sq_40690_lg" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pb_sq_40690_lg.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="batmanHeadClean" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\batmanHeadClean.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="batmanHeadTriangle" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\batmanHeadTriangle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="circle" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\circle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -352,10 +154,34 @@
   <data name="triangle" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\triangle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="home" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\home.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="BatmanMain" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BatmanMain.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="BatmanOpening" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BatmanOpening.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="blue_cone" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\blue-cone.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="blue_cube" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\blue-cube.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="blue_cuboid" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\blue-cuboid.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="blue_cylinder" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\blue-cylinder.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="blue_sphere" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\blue-sphere.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="blue_square_pyramid" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\blue-square-pyramid.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="HomeIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\HomeIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconsineed_cross_24_128" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconsineed-cross-24-128.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
