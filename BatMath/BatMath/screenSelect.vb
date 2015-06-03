@@ -1,79 +1,114 @@
 ﻿Public Class screenSelect
 
     Private Sub screenSelect_Load(sender As Object, e As EventArgs) Handles Me.Load
-        Me.BackColor = ColorTranslator.FromHtml("#36454F")
         screenHome.Hide()
-        picSquare.BackColor = Color.Transparent
-        picCircle.Image = Nothing
-        picTriangle.Image = Nothing
-        If Area = True Then
-
-        End If
+        picCircle.Visible = False
+        picHexagon.Visible = False
+        picPentagon.Visible = False
+        picRectangle.Visible = False
+        picSquare.Visible = False
+        picTriangle.Visible = False
     End Sub
 
     Private Sub CircleClick(sender As Object, e As EventArgs) Handles lblCircle.Click, picCircle.Click
-        If Area = True Then
-            Shape = "Circle"
-            screenArea.Show()
-            Me.Hide()
-        End If
+        ShapeNum = 0
+        screenArea.Show()
     End Sub
 
     Private Sub SquareClick(sender As Object, e As EventArgs) Handles lblSquare.Click, picSquare.Click
-        If Area = True Then
-            Shape = "Square"
+            ShapeNum = 1
             screenArea.Show()
-            Me.Hide()
-        End If
+    End Sub
+
+    Private Sub HexagonClick(sender As Object, e As EventArgs) Handles lblHexagon.Click, picHexagon.Click
+            ShapeNum = 3
+            screenArea.Show()
+    End Sub
+
+    Private Sub PentagonClick(sender As Object, e As EventArgs) Handles lblPentagon.Click, picPentagon.Click
+            ShapeNum = 4
+            screenArea.Show()
+    End Sub
+
+    Private Sub RectangleClick(sender As Object, e As EventArgs) Handles lblRectangle.Click, picRectangle.Click
+            ShapeNum = 5
+            screenArea.Show()
     End Sub
 
     Private Sub TriangleClick(sender As Object, e As EventArgs) Handles lblTriangle.Click, picTriangle.Click
-        If Area = True Then
-            Shape = "Triangle"
+            ShapeNum = 2
             screenArea.Show()
-            Me.Hide()
-        End If
     End Sub
 
-    Private Sub picCircle_MouseEnter(sender As Object, e As EventArgs) Handles picCircle.MouseEnter, lblCircle.MouseEnter
-        If Area = True Then
-            picCircle.Image = My.Resources.botmon
-            lblCircle.Text = ""
-        End If
+    Private Sub lblCircle_Leave(sender As Object, e As EventArgs) Handles lblCircle.Leave
+        lblCircle.Parent = Me
+        lblCircle.BackColor = Color.Transparent
+        picCircle.Visible = False
     End Sub
 
-    Private Sub picCircle_MouseLeave(sender As Object, e As EventArgs) Handles picCircle.MouseLeave, lblCircle.MouseLeave
-        If Area = True Then
-            picCircle.Image = Nothing
-            lblCircle.Text = "Circle"
-        End If
+    Private Sub lblHexagon_Leave(sender As Object, e As EventArgs) Handles lblHexagon.Leave
+        lblHexagon.Parent = Me
+        lblHexagon.BackColor = Color.Transparent
+        picHexagon.Visible = False
     End Sub
 
-    Private Sub picSquare_MouseEnter(sender As Object, e As EventArgs) Handles picSquare.MouseEnter, lblSquare.MouseEnter
-        If Area = True Then
-            picSquare.BackColor = ColorTranslator.FromHtml("#F1C143")
-            lblSquare.Text = ""
-        End If
+    Private Sub lblPentagon_Leave(sender As Object, e As EventArgs) Handles lblPentagon.Leave
+        lblPentagon.Parent = Me
+        lblPentagon.BackColor = Color.Transparent
+        picPentagon.Visible = False
     End Sub
 
-    Private Sub picSquare_MouseLeave(sender As Object, e As EventArgs) Handles picSquare.MouseLeave, lblSquare.MouseLeave
-        If Area = True Then
-            picSquare.BackColor = Color.Transparent
-            lblSquare.Text = "Square"
-        End If
+    Private Sub lblRectangle_Leave(sender As Object, e As EventArgs) Handles lblRectangle.Leave
+        lblRectangle.Parent = Me
+        lblRectangle.BackColor = Color.Transparent
+        picRectangle.Visible = False
     End Sub
 
-    Private Sub picTriangle_MouseEnter(sender As Object, e As EventArgs) Handles picTriangle.MouseEnter, lblTriangle.MouseEnter
-        If Area = True Then
-            picTriangle.Image = My.Resources.botmon
-            lblTriangle.Text = ""
-        End If
+    Private Sub lblSquare_Leave(sender As Object, e As EventArgs) Handles lblSquare.Leave
+        lblSquare.Parent = Me
+        lblSquare.BackColor = Color.Transparent
+        picSquare.Visible = False
     End Sub
 
-    Private Sub picTriangle_MouseLeave(sender As Object, e As EventArgs) Handles picTriangle.MouseLeave, lblTriangle.MouseLeave
-        If Area = True Then
-            picTriangle.Image = Nothing
-            lblTriangle.Text = "Traingle"
-        End If
+    Private Sub lblTriangle_Leave(sender As Object, e As EventArgs) Handles lblTriangle.Leave
+        lblTriangle.Parent = Me
+        lblTriangle.BackColor = Color.Transparent
+        picTriangle.Visible = False
+    End Sub
+
+    Private Sub lblCircle_MouseEnter(sender As Object, e As EventArgs) Handles lblCircle.MouseEnter
+        lblCircle.Parent = picCircle
+        lblCircle.BackColor = Color.Transparent
+        picCircle.Visible = True
+    End Sub
+
+    Private Sub lblHexagon_MouseEnter(sender As Object, e As EventArgs) Handles lblHexagon.MouseEnter
+        lblHexagon.Parent = picHexagon
+        lblHexagon.BackColor = Color.Transparent
+        picHexagon.Visible = True
+    End Sub
+
+    Private Sub lblPentagon_MouseEnter(sender As Object, e As EventArgs) Handles lblPentagon.MouseEnter
+        lblPentagon.Parent = picPentagon
+        lblPentagon.BackColor = Color.Transparent
+        picPentagon.Visible = True
+    End Sub
+
+    Private Sub lblRectangle_MouseEnter(sender As Object, e As EventArgs) Handles lblRectangle.MouseEnter
+        lblRectangle.Parent = picRectangle
+        lblRectangle.BackColor = Color.Transparent
+        picRectangle.Visible = True
+    End Sub
+
+    Private Sub lblSquare_MouseEnter(sender As Object, e As EventArgs) Handles lblSquare.MouseEnter
+        lblSquare.Parent = picSquare
+        lblSquare.BackColor = Color.Transparent
+        picSquare.Visible = True
+    End Sub
+
+    Private Sub lblTriangle_MouseEnter(sender As Object, e As EventArgs) Handles lblTriangle.MouseEnter
+        lblTriangle.Parent = picTriangle
+        lblTriangle.BackColor = Color.Transparent
+        picTriangle.Visible = True
     End Sub
 End Class

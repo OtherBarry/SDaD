@@ -1,7 +1,6 @@
 ﻿Public Class screenHome
 
     Private Sub screenHome_Load(sender As Object, e As EventArgs) Handles Me.Load
-        Me.BackColor = ColorTranslator.FromHtml("#36454F")
         screenLoad.Hide()
     End Sub
 
