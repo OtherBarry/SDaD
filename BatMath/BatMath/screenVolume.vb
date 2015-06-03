@@ -7,10 +7,11 @@
 
     Private Sub screenVolume_Load(sender As Object, e As EventArgs) Handles Me.Load
         screenSelectVolume.Hide()
+        Label3.Text = "The formula for the area of a " + Shapes3D(ShapeNum) + " is " + AnswersVolume(0, ShapeNum)
         Me.BackColor = ColorTranslator.FromHtml("#36454F")
-        input1.BackColor = ColorTranslator.FromHtml("#FCE5C3")
-        input2.BackColor = ColorTranslator.FromHtml("#FCE5C3")
-        input3.BackColor = ColorTranslator.FromHtml("#FCE5C3")
+        input1.BackColor = ColorTranslator.FromHtml("#5e7889")
+        input2.BackColor = ColorTranslator.FromHtml("#5e7889")
+        input3.BackColor = ColorTranslator.FromHtml("#5e7889")
         lbl3.Visible = False
         input3.Visible = False
         lblTitle.Text = Shapes3D(ShapeNum)

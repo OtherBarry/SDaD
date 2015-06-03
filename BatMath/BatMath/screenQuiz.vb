@@ -13,13 +13,13 @@
         questionNumber += 1
         txtQuestion.Text = QuestionsArea(questionNumber)
         lblComplete.Text = "Completed: " + questionNumber.ToString
-        If RadioButtons(random).Checked = True Then
+        If RadioButtonsArea(random).Checked = True Then
             correctNumber += 1
             lblCorrect.Text = "Correct: " + correctNumber.ToString
         End If
         Randomize()
         random = Rnd() * 3
-        RadioButtons(random).Text = AnswersArea(0, questionNumber)
+        RadioButtonsArea(random).Text = AnswersArea(0, questionNumber)
         If RadioButton1.Text = AnswersArea(0, questionNumber) Then
             RadioButton2.Text = AnswersArea(1, questionNumber)
             RadioButton3.Text = AnswersArea(2, questionNumber)
@@ -42,8 +42,9 @@
     Private Sub screenQuiz_Load(sender As Object, e As EventArgs) Handles Me.Load
         Randomize()
         random = Rnd() * 3
+        questionNumber = 0
         txtQuestion.Text = QuestionsArea(0)
-        RadioButtons(random).Text = AnswersArea(0, 0)
+        RadioButtonsArea(random).Text = AnswersArea(0, 0)
         If RadioButton1.Text = AnswersArea(0, 0) Then
             RadioButton2.Text = AnswersArea(1, 0)
             RadioButton3.Text = AnswersArea(2, 0)

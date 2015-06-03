@@ -2,10 +2,11 @@
 
     Private Sub screenArea_Load(sender As Object, e As EventArgs) Handles Me.Load
         screenSelect.Hide()
+        Label3.Text = "The formula for the area of a " + Shapes2D(ShapeNum) + " is " + AnswersArea(0, ShapeNum)
         Me.BackColor = ColorTranslator.FromHtml("#36454F")
-        input1.BackColor = ColorTranslator.FromHtml("#FCE5C3")
-        input2.BackColor = ColorTranslator.FromHtml("#FCE5C3")
-        input3.BackColor = ColorTranslator.FromHtml("#FCE5C3")
+        input1.BackColor = ColorTranslator.FromHtml("#5e7889")
+        input2.BackColor = ColorTranslator.FromHtml("#5e7889")
+        input3.BackColor = ColorTranslator.FromHtml("#5e7889")
         lbl2.Visible = False
         input2.Visible = False
         lbl3.Visible = False

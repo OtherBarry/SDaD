@@ -35,6 +35,7 @@ Partial Class screenVolume
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.picCorner = New System.Windows.Forms.PictureBox()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.Label3 = New System.Windows.Forms.Label()
         CType(Me.input3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.input2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.input1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -134,7 +135,7 @@ Partial Class screenVolume
         '
         'input1
         '
-        Me.input1.BackColor = System.Drawing.SystemColors.InactiveCaption
+        Me.input1.BackColor = System.Drawing.Color.Indigo
         Me.input1.Font = New System.Drawing.Font("BatmanForeverAlternate", 25.0!)
         Me.input1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(66, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.input1.Location = New System.Drawing.Point(839, 189)
@@ -185,12 +186,23 @@ Partial Class screenVolume
         Me.PictureBox3.TabIndex = 27
         Me.PictureBox3.TabStop = False
         '
+        'Label3
+        '
+        Me.Label3.Font = New System.Drawing.Font("BatmanForeverAlternate", 15.0!)
+        Me.Label3.Location = New System.Drawing.Point(12, 134)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(618, 52)
+        Me.Label3.TabIndex = 28
+        Me.Label3.Text = "x × y = z"
+        Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
         'screenVolume
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(54, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(79, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1024, 576)
+        Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.PictureBox3)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.lbl3)
@@ -232,4 +244,5 @@ Partial Class screenVolume
     Friend WithEvents input2 As System.Windows.Forms.NumericUpDown
     Friend WithEvents input1 As System.Windows.Forms.NumericUpDown
     Friend WithEvents PictureBox3 As System.Windows.Forms.PictureBox
+    Friend WithEvents Label3 As System.Windows.Forms.Label
 End Class

@@ -22,6 +22,7 @@ Partial Class screenQuizVolume
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(screenQuizVolume))
         Me.btnNext = New System.Windows.Forms.Button()
         Me.RadioButton4 = New System.Windows.Forms.RadioButton()
         Me.RadioButton3 = New System.Windows.Forms.RadioButton()
@@ -62,10 +63,10 @@ Partial Class screenQuizVolume
         Me.RadioButton4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(222, Byte), Integer), CType(CType(33, Byte), Integer))
         Me.RadioButton4.Location = New System.Drawing.Point(48, 428)
         Me.RadioButton4.Name = "RadioButton4"
-        Me.RadioButton4.Size = New System.Drawing.Size(218, 23)
+        Me.RadioButton4.Size = New System.Drawing.Size(44, 23)
         Me.RadioButton4.TabIndex = 17
         Me.RadioButton4.TabStop = True
-        Me.RadioButton4.Text = "RadioButton4"
+        Me.RadioButton4.Text = "d"
         Me.RadioButton4.UseVisualStyleBackColor = True
         '
         'RadioButton3
@@ -75,10 +76,10 @@ Partial Class screenQuizVolume
         Me.RadioButton3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(222, Byte), Integer), CType(CType(33, Byte), Integer))
         Me.RadioButton3.Location = New System.Drawing.Point(48, 353)
         Me.RadioButton3.Name = "RadioButton3"
-        Me.RadioButton3.Size = New System.Drawing.Size(218, 23)
+        Me.RadioButton3.Size = New System.Drawing.Size(42, 23)
         Me.RadioButton3.TabIndex = 16
         Me.RadioButton3.TabStop = True
-        Me.RadioButton3.Text = "RadioButton3"
+        Me.RadioButton3.Text = "c"
         Me.RadioButton3.UseVisualStyleBackColor = True
         '
         'RadioButton2
@@ -88,10 +89,10 @@ Partial Class screenQuizVolume
         Me.RadioButton2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(222, Byte), Integer), CType(CType(33, Byte), Integer))
         Me.RadioButton2.Location = New System.Drawing.Point(48, 278)
         Me.RadioButton2.Name = "RadioButton2"
-        Me.RadioButton2.Size = New System.Drawing.Size(218, 23)
+        Me.RadioButton2.Size = New System.Drawing.Size(44, 23)
         Me.RadioButton2.TabIndex = 15
         Me.RadioButton2.TabStop = True
-        Me.RadioButton2.Text = "RadioButton2"
+        Me.RadioButton2.Text = "b"
         Me.RadioButton2.UseVisualStyleBackColor = True
         '
         'RadioButton1
@@ -101,10 +102,10 @@ Partial Class screenQuizVolume
         Me.RadioButton1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(222, Byte), Integer), CType(CType(33, Byte), Integer))
         Me.RadioButton1.Location = New System.Drawing.Point(48, 203)
         Me.RadioButton1.Name = "RadioButton1"
-        Me.RadioButton1.Size = New System.Drawing.Size(207, 23)
+        Me.RadioButton1.Size = New System.Drawing.Size(43, 23)
         Me.RadioButton1.TabIndex = 14
         Me.RadioButton1.TabStop = True
-        Me.RadioButton1.Text = "RadioButton1"
+        Me.RadioButton1.Text = "a"
         Me.RadioButton1.UseVisualStyleBackColor = True
         '
         'txtQuestion
@@ -155,7 +156,7 @@ Partial Class screenQuizVolume
         '
         'PictureBox2
         '
-        Me.PictureBox2.Image = Global.BatMath.My.Resources.Resources.iconsineed_cross_24_128
+        Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
         Me.PictureBox2.Location = New System.Drawing.Point(368, 11)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(63, 63)
@@ -165,7 +166,7 @@ Partial Class screenQuizVolume
         '
         'PictureBox1
         '
-        Me.PictureBox1.Image = Global.BatMath.My.Resources.Resources.HomeIcon
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
         Me.PictureBox1.Location = New System.Drawing.Point(437, 11)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(63, 63)

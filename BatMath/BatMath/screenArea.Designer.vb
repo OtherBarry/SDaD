@@ -35,6 +35,7 @@ Partial Class screenArea
         Me.picShape = New System.Windows.Forms.PictureBox()
         Me.picCorner = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.Label3 = New System.Windows.Forms.Label()
         CType(Me.input1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.input2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.input3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -184,12 +185,23 @@ Partial Class screenArea
         Me.PictureBox2.TabIndex = 17
         Me.PictureBox2.TabStop = False
         '
+        'Label3
+        '
+        Me.Label3.Font = New System.Drawing.Font("BatmanForeverAlternate", 15.0!)
+        Me.Label3.Location = New System.Drawing.Point(153, 146)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(433, 52)
+        Me.Label3.TabIndex = 19
+        Me.Label3.Text = "x × y = z"
+        Me.Label3.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
         'screenArea
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(54, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(79, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1024, 576)
+        Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.PictureBox1)
@@ -231,4 +243,5 @@ Partial Class screenArea
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
+    Friend WithEvents Label3 As System.Windows.Forms.Label
 End Class

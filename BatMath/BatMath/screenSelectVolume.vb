@@ -131,4 +131,9 @@
     Private Sub PictureBox2_MouseLeave(sender As Object, e As EventArgs) Handles PictureBox2.MouseLeave
         PictureBox2.BackColor = Nothing
     End Sub
+
+    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
+        screenHome.Show()
+        Me.Close()
+    End Sub
 End Class

@@ -42,4 +42,12 @@
     Private Sub Label3_MouseLeave(sender As Object, e As EventArgs) Handles lblVolume.MouseLeave
         lblVolume.ForeColor = Color.Black
     End Sub
+
+    Private Sub Label4_MouseEnter(sender As Object, e As EventArgs) Handles Label1.MouseEnter
+        Label1.ForeColor = ColorTranslator.FromHtml("#FFDE21")
+    End Sub
+
+    Private Sub Label4_MouseLeave(sender As Object, e As EventArgs) Handles Label1.MouseLeave
+        Label1.ForeColor = Color.Black
+    End Sub
 End Class
