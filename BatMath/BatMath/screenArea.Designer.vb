@@ -30,13 +30,16 @@ Partial Class screenArea
         Me.lblTitle = New System.Windows.Forms.Label()
         Me.lbl1 = New System.Windows.Forms.Label()
         Me.lbl2 = New System.Windows.Forms.Label()
-        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.picShape = New System.Windows.Forms.PictureBox()
+        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
+        Me.Label1 = New System.Windows.Forms.Label()
         CType(Me.input1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.input2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.input3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picShape, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'input1
@@ -128,15 +131,15 @@ Partial Class screenArea
         Me.lbl2.Text = "Label2"
         Me.lbl2.TextAlign = System.Drawing.ContentAlignment.TopRight
         '
-        'PictureBox4
+        'PictureBox1
         '
-        Me.PictureBox4.Image = Global.BatMath.My.Resources.Resources.atman
-        Me.PictureBox4.Location = New System.Drawing.Point(0, 316)
-        Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(380, 260)
-        Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox4.TabIndex = 10
-        Me.PictureBox4.TabStop = False
+        Me.PictureBox1.Image = Global.BatMath.My.Resources.Resources.HomeIcon
+        Me.PictureBox1.Location = New System.Drawing.Point(949, 12)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(63, 63)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 15
+        Me.PictureBox1.TabStop = False
         '
         'picShape
         '
@@ -149,12 +152,34 @@ Partial Class screenArea
         Me.picShape.TabIndex = 14
         Me.picShape.TabStop = False
         '
+        'PictureBox4
+        '
+        Me.PictureBox4.Image = Global.BatMath.My.Resources.Resources.atman
+        Me.PictureBox4.Location = New System.Drawing.Point(0, 316)
+        Me.PictureBox4.Name = "PictureBox4"
+        Me.PictureBox4.Size = New System.Drawing.Size(380, 260)
+        Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox4.TabIndex = 10
+        Me.PictureBox4.TabStop = False
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("BatmanForeverAlternate", 25.0!)
+        Me.Label1.Location = New System.Drawing.Point(602, 442)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(376, 31)
+        Me.Label1.TabIndex = 16
+        Me.Label1.Text = "Test yourself!"
+        '
         'screenArea
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(54, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(79, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1024, 576)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.lbl3)
         Me.Controls.Add(Me.lbl2)
         Me.Controls.Add(Me.lbl1)
@@ -172,8 +197,9 @@ Partial Class screenArea
         CType(Me.input1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.input2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.input3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picShape, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -188,4 +214,6 @@ Partial Class screenArea
     Friend WithEvents lbl2 As System.Windows.Forms.Label
     Friend WithEvents PictureBox4 As System.Windows.Forms.PictureBox
     Friend WithEvents picShape As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
+    Friend WithEvents Label1 As System.Windows.Forms.Label
 End Class

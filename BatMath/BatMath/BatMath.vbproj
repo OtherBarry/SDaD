@@ -86,10 +86,16 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <Compile Include="screenQuiz.Designer.vb">
+      <DependentUpon>screenQuiz.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form1.vb">
+    <Compile Include="screenQuiz.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="screenVolume.Designer.vb">
+      <DependentUpon>screenVolume.vb</DependentUpon>
+    </Compile>
+    <Compile Include="screenVolume.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GlobalVariables.vb" />
@@ -134,8 +140,11 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <EmbeddedResource Include="screenQuiz.resx">
+      <DependentUpon>screenQuiz.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="screenVolume.resx">
+      <DependentUpon>screenVolume.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="screenArea.resx">
       <DependentUpon>screenArea.vb</DependentUpon>
@@ -374,6 +383,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Deets.txt" />
+    <None Include="Resources\HomeIcon.png" />
+    <None Include="Resources\home.png" />
     <None Include="Resources\triangle.png" />
     <None Include="Resources\square.png" />
     <None Include="Resources\rectangle.png" />

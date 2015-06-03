@@ -111,4 +111,9 @@
         lblTriangle.BackColor = Color.Transparent
         picTriangle.Visible = True
     End Sub
+
+    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
+        screenHome.Show()
+        Me.Hide()
+    End Sub
 End Class
