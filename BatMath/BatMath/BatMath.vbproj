@@ -167,6 +167,9 @@
     <EmbeddedResource Include="screenExit.resx">
       <DependentUpon>screenExit.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="screenPi.resx">
+      <DependentUpon>screenPi.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="screenQuiz.resx">
       <DependentUpon>screenQuiz.vb</DependentUpon>
     </EmbeddedResource>
@@ -416,6 +419,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Deets.txt" />
+    <None Include="Resources\Pi-unrolled-720.gif" />
+    <None Include="Resources\pi-symbol-md.png" />
     <None Include="Resources\iconsineed-cross-24-128.png" />
     <None Include="Resources\BatmanMain.wav" />
     <None Include="Resources\BatmanOpening.wav" />

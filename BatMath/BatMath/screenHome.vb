@@ -50,4 +50,9 @@
     Private Sub Label4_MouseLeave(sender As Object, e As EventArgs) Handles Label1.MouseLeave
         Label1.ForeColor = Color.Black
     End Sub
+
+    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
+        screenPi.Show()
+        Me.Hide()
+    End Sub
 End Class
